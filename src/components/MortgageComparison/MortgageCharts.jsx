@@ -46,11 +46,11 @@ const MortgageCharts = ({
 
   return (
 
-    <div className="mt-10 grid gap-8 lg:grid-cols-2">
+    <div className="mt-8 md:mt-10 grid gap-8 lg:grid-cols-2">
 
-      <Card className="p-8">
+      <Card className="p-5 md:p-8">
 
-        <h2 className="mb-6 text-2xl font-bold text-white">
+        <h2 className="mb-6 text-xl md:text-2xl font-bold text-white">
           Monthly Payment Comparison
         </h2>
 
