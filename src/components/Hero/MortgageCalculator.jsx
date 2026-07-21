@@ -248,7 +248,7 @@ function MortgageCalculator() {
 
             <div>
 
-              <h2 className="text-5xl font-bold text-green-400">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-green-400">
                 AED {monthlyPayment.toLocaleString()}
               </h2>
 

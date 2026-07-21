@@ -62,7 +62,7 @@ const LoanBreakdown = ({
               </p>
 
               <h3
-                className={`mt-2 text-xl md:text-2xl font-bold ${item.color}`}
+                className={`mt-2 text-base md:text-xl md:text-2xl font-bold ${item.color}`}
               >
 {"AED "} {Number(item.value).toLocaleString()}
               </h3>

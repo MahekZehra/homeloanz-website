@@ -50,7 +50,7 @@ const MortgageCharts = ({
 
       <Card className="p-5 md:p-8">
 
-        <h2 className="mb-6 text-xl md:text-2xl font-bold text-white">
+        <h2 className="mb-6 text-base md:text-xl md:text-2xl font-bold text-white">
           Monthly Payment Comparison
         </h2>
 

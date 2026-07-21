@@ -93,7 +93,7 @@ function WhyChooseUs() {
 
                 </div>
 
-                <h3 className="mt-6 text-xl md:text-2xl font-bold text-[#071A35]">
+                <h3 className="mt-6 text-base md:text-xl md:text-2xl font-bold text-[#071A35]">
 
                   {feature.title}
 

@@ -62,7 +62,7 @@ const MortgageSummary = ({
               {item.label}
             </p>
 
-            <h3 className="mt-2 text-xl md:text-2xl font-bold text-white">
+            <h3 className="mt-2 text-base md:text-xl md:text-2xl font-bold text-white">
   {item.label === "Loan Amount" ? (
     <>
       AED{" "}

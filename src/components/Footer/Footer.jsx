@@ -135,7 +135,7 @@ function Footer() {
 
           <div>
 
-            <h3 className="text-lg md:text-xl font-semibold">
+            <h3 className="text-lg md:text-base md:text-base md:text-xl font-semibold">
 
               Quick Links
 
@@ -173,7 +173,7 @@ function Footer() {
 
           <div>
 
-            <h3 className="text-lg md:text-xl font-semibold">
+            <h3 className="text-lg md:text-base md:text-xl font-semibold">
 
               Mortgage Solutions
 
@@ -211,7 +211,7 @@ function Footer() {
 
           <div>
 
-            <h3 className="text-lg md:text-xl font-semibold">
+            <h3 className="text-lg md:text-base md:text-xlfont-semibold">
 
               Resources
 

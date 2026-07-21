@@ -83,7 +83,7 @@ const ComparisonCard = ({
             Monthly Payment
           </p>
 
-          <p className="text-xl font-semibold text-white transition-colors duration-300 group-hover:text-cyan-300">
+          <p className="text-base md:text-xlfont-semibold text-white transition-colors duration-300 group-hover:text-cyan-300">
             AED{" "}
 {monthlyPayment}
           </p>
@@ -94,7 +94,7 @@ const ComparisonCard = ({
             Total Interest
           </p>
 
-          <p className="text-xl font-semibold text-white">
+          <p className="text-base md:text-xl font-semibold text-white">
             AED{" "}
 {totalInterest}
           </p>
@@ -105,7 +105,7 @@ const ComparisonCard = ({
             Total Payment
           </p>
 
-          <p className="text-xl font-semibold text-white">
+          <p className="text-base md:text-xl font-semibold text-white">
             AED{" "}
 {totalPayment}
           </p>

@@ -32,7 +32,7 @@ const PropertyInputs = ({
 
           <div>
 
-            <h3 className="text-xl md:text-2xl font-bold text-white">
+            <h3 className="text-base md:text-xl md:text-2xl font-bold text-white">
               Loan Details
             </h3>
 

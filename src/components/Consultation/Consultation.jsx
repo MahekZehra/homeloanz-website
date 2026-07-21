@@ -58,7 +58,7 @@ const handleSubmit = async (e) => {
             Get a Free Mortgage Consultation
 
           </h2>
-          <p className="mx-auto mt-5 max-w-3xl text-[15px] md:text-xl leading-6 md:leading-8 text-gray-600">
+          <p className="mx-auto mt-5 max-w-3xl text-[15px] md:text-base md:text-xl leading-6 md:leading-8 text-gray-600">
 
             Fill out the form below and one of our mortgage experts
             will contact you within 24 hours with personalized

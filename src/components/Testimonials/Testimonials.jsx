@@ -51,7 +51,7 @@ function Testimonials() {
             What Our Clients Say
 
           </h2>
-          <p className="mx-auto mt-5 max-w-3xl text-base md:text-xl leading-7 md:leading-8 text-slate-600">
+          <p className="mx-auto mt-5 max-w-3xl text-base md:text-base md:text-xl leading-7 md:leading-8 text-slate-600">
 
             Hundreds of homeowners and investors across the UAE trust
             HomeLoanz to make their mortgage journey simple, transparent,
@@ -100,7 +100,7 @@ function Testimonials() {
 
                 <div className="flex items-center gap-4">
 
-                <div className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-lg md:text-xl font-bold text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
+                <div className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-lg md:text-base md:text-xl font-bold text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
 
                     {client.initials}
 

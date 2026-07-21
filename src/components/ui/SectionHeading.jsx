@@ -17,7 +17,7 @@ const SectionHeading = ({
         {badge}
       </span>
 
-      <h2 className="mt-4 text-4xl font-bold text-white lg:text-5xl">
+      <h2 className="mt-4 text-4xl font-bold text-white lg:text-3xl sm:text-4xl lg:text-5xl">
         {title}
       </h2>
 

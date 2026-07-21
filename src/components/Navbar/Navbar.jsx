@@ -31,7 +31,7 @@ function Navbar() {
         </button>
 
         {/* Mobile Menu Icon */}
-        <button className="lg:hidden text-white text-xl p-2">
+        <button className="lg:hidden text-white text-base md:text-xl p-2">
           <FaBars />
         </button>
 

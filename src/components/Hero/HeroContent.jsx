@@ -20,13 +20,13 @@ function HeroContent() {
 
       {/* Heading */}
 
-      <h1 className="mt-6 md:mt-8 text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
+      <h1 className="mt-6 md:mt-8 text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
 
         Home Financing
 
       </h1>
 
-      <h1 className="text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
+      <h1 className="text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
 
         Made Simple
 

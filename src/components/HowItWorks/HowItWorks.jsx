@@ -106,7 +106,7 @@ function HowItWorks() {
 
                 {/* Title */}
 
-               <h3 className="mt-3 text-xl md:text-2xl font-bold text-[#071A35]">
+               <h3 className="mt-3 text-base md:text-xl md:text-2xl font-bold text-[#071A35]">
 
                   {step.title}
 
