@@ -38,25 +38,25 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <section className="bg-white py-24">
+    <section className="bg-white py-16 md:py-24">
 
-      <div className="mx-auto max-w-7xl px-6">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6">
 
         {/* Heading */}
 
         <div className="text-center">
 
-          <span className="rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700">
+          <span className="rounded-full bg-blue-100 px-4 py-2 text-xs md:text-sm font-semibold text-blue-700">
             HOW IT WORKS
           </span>
 
-          <h2 className="mt-6 text-5xl font-bold text-[#071A35]">
+          <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#071A35]">
 
             Your Mortgage Journey in 4 Easy Steps
 
           </h2>
 
-          <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-gray-600">
+          <p className="mx-auto mt-5 max-w-3xl text-base md:text-lg leading-7 md:leading-8 text-gray-600">
 
             We simplify every stage of your mortgage process—from your
             first consultation to final bank approval.
@@ -67,7 +67,7 @@ function HowItWorks() {
 
         {/* Timeline */}
 
-        <div className="mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 md:mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
 
           {steps.map((step, index) => {
 
@@ -90,15 +90,15 @@ function HowItWorks() {
 
                 {/* Circle */}
 
-                <div className="relative z-10 mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-blue-600 shadow-lg">
+                <div className="relative z-10 mx-auto flex h-16 w-16 md:h-20 md:w-20 items-center justify-center rounded-full bg-blue-600 shadow-lg">
 
-                  <Icon size={34} className="text-white" />
+                  <Icon size={28} className="text-white" />
 
                 </div>
 
                 {/* Number */}
 
-                <div className="mt-6 text-blue-600 font-bold text-sm tracking-widest">
+                <div className="mt-5 text-blue-600 font-bold text-xs md:text-sm tracking-widest">
 
                   STEP {step.number}
 
@@ -106,7 +106,7 @@ function HowItWorks() {
 
                 {/* Title */}
 
-                <h3 className="mt-3 text-2xl font-bold text-[#071A35]">
+               <h3 className="mt-3 text-xl md:text-2xl font-bold text-[#071A35]">
 
                   {step.title}
 
@@ -114,7 +114,7 @@ function HowItWorks() {
 
                 {/* Description */}
 
-                <p className="mt-4 leading-8 text-gray-600">
+                <p className="mt-3 text-sm md:text-base leading-7 md:leading-8 text-gray-600">
 
                   {step.description}
 
