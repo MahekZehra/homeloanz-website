@@ -2,7 +2,7 @@ import { ShieldCheck, Headphones, Calculator, Clock3 } from "lucide-react";
 
 function HeroContent() {
   return (
-   <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 pt-20 pb-24">
+  <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-12 pt-12 md:pt-20 pb-16 md:pb-24">
 
       {/* Badge */}
 
@@ -20,13 +20,13 @@ function HeroContent() {
 
       {/* Heading */}
 
-      <h1 className="mt-8 text-[72px] leading-[1.05] font-extrabold text-white">
+      <h1 className="mt-6 md:mt-8 text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
 
         Home Financing
 
       </h1>
 
-      <h1 className="text-[72px] leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
+      <h1 className="text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
 
         Made Simple
 
@@ -34,7 +34,7 @@ function HeroContent() {
 
       {/* Description */}
 
-      <p className="mt-8 text-gray-300 text-lg leading-9">
+      <p className="mt-6 text-gray-300 text-base md:text-lg leading-7 md:leading-9 max-w-xl">
 
         We help UAE residents and investors secure the best mortgage
         solutions from top banks with fast approvals and expert guidance.
@@ -43,7 +43,7 @@ function HeroContent() {
 
       {/* Buttons */}
 
-      <div className="mt-10 flex gap-5">
+      <div className="mt-8 flex flex-col sm:flex-row gap-4">
 
         <button className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105">
 
@@ -65,7 +65,7 @@ function HeroContent() {
 
       {/* Bottom Trust */}
 
-      <div className="mt-12 flex gap-12">
+      <div className="mt-10 flex flex-wrap gap-8">
 
         <div className="flex items-center gap-3">
 

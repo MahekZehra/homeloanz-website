@@ -7,7 +7,7 @@ function Hero() {
     <section className="relative overflow-hidden bg-[#071A35] min-h-screen">
       <BackgroundEffects />
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-8 lg:px-12 pt-36 pb-24">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-12 pt-28 md:pt-36 pb-16 md:pb-24">
 
         <div className="grid lg:grid-cols-2 gap-10 items-center">
 
