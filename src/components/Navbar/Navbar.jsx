@@ -3,14 +3,14 @@ import { FaBars } from "react-icons/fa";
 function Navbar() {
   return (
     <header className="absolute top-0 left-0 w-full z-50">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
+      <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-6 lg:px-8 py-4 md:py-6">
 
         {/* Logo */}
         <div>
-          <h1 className="text-3xl font-bold text-white">
+          <h1 className="text-2xl md:text-3xl font-bold text-white">
             Home<span className="text-blue-500">Loanz</span>
           </h1>
-          <p className="text-xs text-gray-300 tracking-[0.3em]">
+          <p className="text-[10px] md:text-xs text-gray-300 tracking-[0.25em]">
             LLC FZ
           </p>
         </div>
@@ -31,7 +31,7 @@ function Navbar() {
         </button>
 
         {/* Mobile Menu Icon */}
-        <button className="lg:hidden text-white text-2xl">
+        <button className="lg:hidden text-white text-xl p-2">
           <FaBars />
         </button>
 
