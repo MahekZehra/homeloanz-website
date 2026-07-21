@@ -53,7 +53,7 @@ const handleSubmit = async (e) => {
             FREE CONSULTATION
           </span>
 
-          <h2 className="mt-5 text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight text-[#071A35] leading-tight">
+          <h2 className="mt-5 text-[28px] sm:text-[34px] md:text-[42px] lg:text-6xl font-extrabold tracking-tight text-[#071A35] leading-tight">
 
             Get a Free Mortgage Consultation
 
