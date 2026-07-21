@@ -42,7 +42,7 @@ const MortgageSummary = ({
     transition={{ duration: 0.6 }}
     viewport={{ once: true }}
 >
-    <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+    <div className="mt-10 grid gap-4 md:gap-6 sm:grid-cols-2 xl:grid-cols-4">
       {items.map((item) => {
         const Icon = item.icon;
 
@@ -62,7 +62,7 @@ const MortgageSummary = ({
               {item.label}
             </p>
 
-            <h3 className="mt-2 text-2xl font-bold text-white">
+            <h3 className="mt-2 text-xl md:text-2xl font-bold text-white">
   {item.label === "Loan Amount" ? (
     <>
       AED{" "}
