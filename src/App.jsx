@@ -6,6 +6,9 @@ import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import HowItWorks from "./components/HowItWorks/HowItWorks";
 import Testimonials from "./components/Testimonials/Testimonials";
 import Footer from "./components/Footer/Footer";
+
+
+import ChatBot from "./components/ChatBot/ChatBot";
 function App() {
   return (
     <>
@@ -17,6 +20,9 @@ function App() {
       <HowItWorks />
       <Testimonials />
       <Footer />
+
+
+      <ChatBot />
 
     </>
   );
