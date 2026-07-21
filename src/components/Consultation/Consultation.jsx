@@ -39,7 +39,7 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F7FAFF] via-white to-[#EEF5FF] py-28">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F7FAFF] via-white to-[#EEF5FF] py-16 md:py-28">
 
      <div className="absolute -left-24 top-24 h-80 w-80 rounded-full bg-blue-200/30 blur-[130px]"></div>
 
@@ -49,17 +49,16 @@ const handleSubmit = async (e) => {
 
         <div className="text-center">
 
-          <span className="inline-block rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700">
+          <span className="inline-block rounded-full bg-blue-100 px-4 py-2 text-xs md:text-sm font-semibold text-blue-700">
             FREE CONSULTATION
           </span>
 
-          <h2 className="mt-6 text-5xl lg:text-6xl font-extrabold tracking-tight font-bold text-[#071A35]">
+          <h2 className="mt-5 text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight text-[#071A35] leading-tight">
 
             Get a Free Mortgage Consultation
 
           </h2>
-
-          <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-slate-600 leading-8 text-gray-600">
+          <p className="mx-auto mt-5 max-w-3xl text-base md:text-xl leading-7 md:leading-8 text-gray-600">
 
             Fill out the form below and one of our mortgage experts
             will contact you within 24 hours with personalized
@@ -71,7 +70,7 @@ const handleSubmit = async (e) => {
 
         {/* Form Card */}
 
-        <div className="relative mx-auto mt-20 max-w-6xl overflow-hidden rounded-[34px] border border-white/60 bg-white/80 backdrop-blur-xl p-10 shadow-[0_30px_80px_rgba(37,99,235,.12)]">
+        <div className="relative mx-auto mt-12 md:mt-20 max-w-6xl overflow-hidden rounded-[34px] border border-white/60 bg-white/80 backdrop-blur-xl p-5 md:p-10 shadow-[0_30px_80px_rgba(37,99,235,.12)]">
 
           {/* Form Starts */}
 
@@ -85,8 +84,8 @@ const handleSubmit = async (e) => {
               <div className="relative">
 
                 <User
-                  className="absolute left-5 top-5 text-gray-400"
-                  size={20}
+                  className="absolute left-4 top-4 text-gray-400"
+                  size={18}
                 />
 
                 <input
@@ -94,7 +93,7 @@ const handleSubmit = async (e) => {
                     name="from_name"
                   placeholder="Full Name"
                    required
-                  className="h-16 w-full rounded-2xl border border-slate-200 bg-slate-50 focus:border-blue-500
+                  className="h-14 md:h-16 w-full rounded-2xl border border-slate-200 bg-slate-50 focus:border-blue-500
 focus:ring-4
 focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
                 />
@@ -106,8 +105,8 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <Phone
-                  className="absolute left-5 top-5 text-gray-400"
-                  size={20}
+                  className="absolute left-4 top-4 text-gray-400"
+                  size={18}
                 />
 
                 <input
@@ -115,7 +114,7 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
                    name="phone"
                   placeholder="Phone Number"
                   required
-                  className="h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
+                  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
                 />
 
               </div>
@@ -125,8 +124,8 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <Mail
-                  className="absolute left-5 top-5 text-gray-400"
-                  size={20}
+                  className="absolute left-4 top-4 text-gray-400"
+                  size={18}
                 />
 
                 <input
@@ -134,7 +133,7 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
                     name="from_email"
                   placeholder="Email Address"
                   required
-                  className="h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
+                  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
                 />
 
               </div>
@@ -144,8 +143,8 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <Building2
-                  className="absolute left-5 top-5 text-gray-400"
-                  size={20}
+                  className="absolute left-4 top-4 text-gray-400"
+                  size={18}
                 />
 
                 <input
@@ -153,7 +152,7 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
                    name="property_value"
                   placeholder="Property Value (AED)"
                   required
-                  className="h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
+                  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
                 />
 
               </div>
@@ -163,14 +162,14 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <BadgeCheck
-                  className="absolute left-5 top-5 text-gray-400"
-                  size={20}
+                  className="absolute left-4 top-4 text-gray-400"
+                  size={18}
                 />
 
                 <select 
                   name="resident_status"
                  required
-                 className="h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white">
+                 className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white">
 
                   <option>Resident Status</option>
 
@@ -191,8 +190,8 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative md:col-span-2">
 
                 <MessageSquare
-                  className="absolute left-5 top-5 text-gray-400"
-                  size={20}
+                  className="absolute left-4 top-4 text-gray-400"
+                  size={18}
                 />
 
                 <textarea
@@ -200,7 +199,7 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
                    name="message"
   required
                   placeholder="Tell us about your mortgage requirements..."
-                  className="w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 pt-5 outline-none transition focus:border-blue-600 focus:bg-white"
+                  className="w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 pt-4 md:pt-5 outline-none transition focus:border-blue-600 focus:bg-white"
                 />
 
               </div>
@@ -213,7 +212,7 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <button
                 type="submit"
                  disabled={loading}
-                className="rounded-2xl bg-gradient-to-r from-[#2563EB] to-[#3B82F6] hover:shadow-[0_15px_40px_rgba(37,99,235,.35)] px-12 py-5 text-lg font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:shadow-blue-300"
+                className="rounded-2xl bg-gradient-to-r from-[#2563EB] to-[#3B82F6] hover:shadow-[0_15px_40px_rgba(37,99,235,.35)] px-8 md:px-12 py-4 md:py-5 text-base md:text-lg font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:shadow-blue-300"
               >
                  {loading ? "Sending..." : "Submit Inquiry"}
               </button>
@@ -230,7 +229,7 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
 )}
 
               <div className="mt-5 text-sm text-gray-500">
- <div className="mt-8 flex flex-wrap justify-center gap-8 text-sm text-slate-500">
+ <div className="mt-8 flex flex-wrap justify-center gap-5 md:gap-8 text-xs md:text-sm text-slate-500">
 
   <div className="flex items-center gap-2">
 
