@@ -41,21 +41,22 @@ function Footer() {
 
       {/* Top Section */}
 
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-5 sm:px-6 py-14 md:py-20">
 
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5">
+      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-5">
+        
 
           {/* Company */}
 
           <div className="lg:col-span-2">
 
-            <h2 className="text-3xl font-bold">
+            <h2 className="text-2xl md:text-3xl font-bold">
 
               Home<span className="text-blue-400">Loanz</span>
 
             </h2>
 
-            <p className="mt-6 leading-8 text-gray-300 max-w-md">
+            <p className="mt-5 text-sm md:text-base leading-7 md:leading-8 text-gray-300 max-w-md">
 
               Helping UAE residents and investors secure the best
               mortgage solutions through trusted banking partners,
@@ -65,11 +66,11 @@ function Footer() {
 
             {/* Contact */}
 
-            <div className="mt-8 space-y-4">
+            <div className="mt-6 space-y-3">
 
               <div className="flex items-center gap-3">
 
-                <Phone className="text-blue-400" size={18} />
+                <Phone className="text-blue-400" size={16} />
 
                 <span>+971 50 123 4567</span>
 
@@ -77,7 +78,7 @@ function Footer() {
 
               <div className="flex items-center gap-3">
 
-                <Mail className="text-blue-400" size={18} />
+                <Mail className="text-blue-400" size={16} />
 
                 <span>info@homeloanzllc.com</span>
 
@@ -85,7 +86,7 @@ function Footer() {
 
               <div className="flex items-center gap-3">
 
-                <MapPin className="text-blue-400" size={18} />
+                <MapPin className="text-blue-400" size={16} />
 
                 <span>Dubai, United Arab Emirates</span>
 
@@ -99,21 +100,21 @@ function Footer() {
 
   <a
     href="#"
-    className="h-11 w-11 rounded-xl bg-white/10 hover:bg-blue-600 transition-all duration-300 flex items-center justify-center"
+    className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-blue-600 transition-all duration-300 flex items-center justify-center"
   >
     <FaFacebookF size={16} />
   </a>
 
   <a
     href="#"
-    className="h-11 w-11 rounded-xl bg-white/10 hover:bg-pink-500 transition-all duration-300 flex items-center justify-center"
+    className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-pink-500 transition-all duration-300 flex items-center justify-center"
   >
-    <FaInstagram size={18} />
+    <FaInstagram size={16} />
   </a>
 
   <a
     href="#"
-    className="h-11 w-11 rounded-xl bg-white/10 hover:bg-sky-600 transition-all duration-300 flex items-center justify-center"
+    className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-sky-600 transition-all duration-300 flex items-center justify-center"
   >
     <FaLinkedinIn size={16} />
   </a>
@@ -122,9 +123,9 @@ function Footer() {
     href="https://wa.me/971501234567"
     target="_blank"
     rel="noopener noreferrer"
-    className="h-11 w-11 rounded-xl bg-green-600 hover:bg-green-700 transition-all duration-300 flex items-center justify-center"
+    className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-green-600 hover:bg-green-700 transition-all duration-300 flex items-center justify-center"
   >
-    <FaWhatsapp size={18} />
+    <FaWhatsapp size={16} />
   </a>
             </div>
 
@@ -134,13 +135,13 @@ function Footer() {
 
           <div>
 
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-lg md:text-xl font-semibold">
 
               Quick Links
 
             </h3>
 
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-5 space-y-3">
 
               {quickLinks.map((link) => (
 
@@ -172,13 +173,13 @@ function Footer() {
 
           <div>
 
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-lg md:text-xl font-semibold">
 
               Mortgage Solutions
 
             </h3>
 
-            <ul className="mt-6 space-y-4">
+            <ul className="mt-5 space-y-3">
 
               {mortgageLinks.map((item) => (
 
@@ -210,13 +211,13 @@ function Footer() {
 
           <div>
 
-            <h3 className="text-xl font-semibold">
+            <h3 className="text-lg md:text-xl font-semibold">
 
               Resources
 
             </h3>
 
-            <ul className="mt-6 space-y-4">
+           <ul className="mt-5 space-y-3">
 
               {resources.map((item) => (
 
@@ -252,15 +253,15 @@ function Footer() {
 
       <div className="border-t border-white/10">
 
-        <div className="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 py-5 md:py-6 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
 
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-xs md:text-sm">
 
             © 2026 HomeLoanz LLC. All Rights Reserved.
 
           </p>
 
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-xs md:text-sm">
 
             Designed & Developed with ❤️ using React & Tailwind CSS
 
@@ -276,7 +277,7 @@ function Footer() {
         href="https://wa.me/971501234567"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-8 right-8 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition duration-300 hover:scale-110 hover:bg-green-600"
+        className="fixed bottom-5 right-5 md:bottom-8 md:right-8 flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition duration-300 hover:scale-110 hover:bg-green-600"
       >
 
         💬
