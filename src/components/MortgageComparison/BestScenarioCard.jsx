@@ -46,7 +46,7 @@ const BestScenarioCard = ({
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <Card className="mt-10 overflow-hidden p-8">
+      <Card className="mt-10 overflow-hidden p-5 md:p-8">
 
         <div className="flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between">
 
@@ -68,14 +68,14 @@ const BestScenarioCard = ({
                   Best Mortgage Scenario
                 </p>
 
-                <h2 className="mt-2 text-3xl font-bold text-white">
+                <h2 className="mt-2 text-2xl md:text-3xl font-bold text-white">
                   Choose {rate}% Interest Rate
                 </h2>
               </div>
 
             </div>
 
-            <p className="text-lg leading-8 text-slate-400">
+            <p className="text-base md:text-lg leading-8 text-slate-400">
               Based on your selected loan details, this option provides
               the lowest estimated mortgage cost and helps you maximize
               your long-term savings.
