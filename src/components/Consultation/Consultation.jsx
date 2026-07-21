@@ -53,12 +53,12 @@ const handleSubmit = async (e) => {
             FREE CONSULTATION
           </span>
 
-          <h2 className="mt-5 text-[28px] sm:text-[34px] md:text-[42px] lg:text-6xl font-extrabold tracking-tight text-[#071A35] leading-tight">
+          <h2 className="mt-5 mx-auto max-w-[320px] text-[22px] sm:text-[28px] md:text-[42px] lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-[#071A35]">
 
             Get a Free Mortgage Consultation
 
           </h2>
-          <p className="mx-auto mt-5 max-w-3xl text-base md:text-xl leading-7 md:leading-8 text-gray-600">
+          <p className="mx-auto mt-5 max-w-3xl text-[15px] md:text-xl leading-6 md:leading-8 text-gray-600">
 
             Fill out the form below and one of our mortgage experts
             will contact you within 24 hours with personalized
@@ -70,7 +70,7 @@ const handleSubmit = async (e) => {
 
         {/* Form Card */}
 
-        <div className="relative mx-auto mt-12 md:mt-20 max-w-6xl overflow-hidden rounded-[34px] border border-white/60 bg-white/80 backdrop-blur-xl p-5 md:p-10 shadow-[0_30px_80px_rgba(37,99,235,.12)]">
+        <div className="relative mx-auto mt-8 md:mt-20 max-w-6xl overflow-hidden rounded-[34px] border border-white/60 bg-white/80 backdrop-blur-xl p-5 md:p-10 px-4 md:px-6 shadow-[0_30px_80px_rgba(37,99,235,.12)]">
 
           {/* Form Starts */}
 
