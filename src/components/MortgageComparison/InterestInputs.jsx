@@ -16,19 +16,19 @@ const InterestInputs = ({
 }) => {
 
   return (
-    <Card className="p-8">
+    <Card className="p-5 md:p-8">
 
       {/* Header */}
 
-      <div className="mb-8">
+      <div className="mb-6 md:mb-8">
 
         <div className="flex items-center gap-3">
 
-          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-400/10">
+          <div className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-2xl bg-cyan-400/10">
 
             <Percent
               className="text-cyan-400"
-              size={22}
+              size={20}
             />
 
           </div>
@@ -36,12 +36,12 @@ const InterestInputs = ({
 
           <div>
 
-            <h3 className="text-2xl font-bold text-white">
+            <h3 className="text-xl md:text-2xl font-bold text-white">
               Interest Comparison
             </h3>
 
 
-            <p className="mt-1 text-sm text-slate-400">
+            <p className="mt-1 text-xs md:text-sm text-slate-400">
               Compare different mortgage rates
             </p>
 
@@ -54,7 +54,7 @@ const InterestInputs = ({
 
       {/* Sliders */}
 
-      <div className="space-y-8">
+      <div className="space-y-6 md:space-y-8">
 
 
         <SliderInput
