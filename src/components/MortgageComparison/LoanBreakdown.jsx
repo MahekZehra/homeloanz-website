@@ -34,7 +34,7 @@ const LoanBreakdown = ({
   ];
 
   return (
-    <Card className="mt-10 p-8">
+    <Card className="mt-8 md:mt-10 p-5 md:p-8">
 
       <h2 className="mb-8 text-3xl font-bold text-white">
         Loan Breakdown
@@ -62,7 +62,7 @@ const LoanBreakdown = ({
               </p>
 
               <h3
-                className={`mt-2 text-2xl font-bold ${item.color}`}
+                className={`mt-2 text-xl md:text-2xl font-bold ${item.color}`}
               >
 {"AED "} {Number(item.value).toLocaleString()}
               </h3>
