@@ -65,7 +65,7 @@ const saving =
 
   return (
 
-    <section className="relative overflow-hidden bg-[#07111F] py-24">
+    <section className="relative overflow-hidden bg-[#07111F] py-16 md:py-24">
 
 
       {/* Background Glow */}
@@ -84,7 +84,7 @@ const saving =
 
 
 
-      <div className="relative mx-auto max-w-7xl px-6">
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-6">
 
 
         {/* Heading */}
@@ -106,15 +106,11 @@ const saving =
 
         {/* Input Area */}
 
-
         <div className="
           grid
-          gap-8
-          lg:grid-cols-2
-        ">
-
-
-
+          gap-6
+           md:gap-8 lg:grid-cols-2">
+    
           {/* Loan Details */}
 
 
@@ -171,7 +167,7 @@ const saving =
   bestRate={bestRate}
 />
 
-<div className="mt-10 grid gap-8 lg:grid-cols-2">
+<div className="mt-8 md:mt-10 grid gap-6 md:gap-8 lg:grid-cols-2">
   <ComparisonCard
     title="Option A"
     rate={rateA}
@@ -211,8 +207,7 @@ const saving =
 <CTASection />
 
 <div className="mt-12 border-t border-white/10 pt-8">
-
-  <div className="mx-auto flex max-w-3xl items-start gap-3">
+<div className="mx-auto mt-2 flex max-w-3xl items-start justify-center gap-2 px-2">
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -229,7 +224,7 @@ const saving =
       />
     </svg>
 
-    <p className="text-sm leading-7 text-slate-400">
+    <p className="text-xs md:text-sm leading-6 md:leading-7 text-slate-400">
       Mortgage calculations are estimates only and should be used for
       informational purposes. Final loan approval, interest rates,
       repayment amounts, and eligibility depend on lender policies.
