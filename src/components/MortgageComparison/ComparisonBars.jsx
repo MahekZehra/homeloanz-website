@@ -18,7 +18,7 @@ const ComparisonRow = ({
 
     <div className="space-y-5">
 
-      <h3 className="text-lg font-semibold text-white">
+      <h3 className="text-base md:text-lg font-semibold text-white">
         {title}
       </h3>
 
@@ -39,7 +39,7 @@ AED {valueA.toLocaleString()}
 
         </div>
 
-        <div className="h-3 overflow-hidden rounded-full bg-white/10">
+        <div className="h-2.5 md:h-3 overflow-hidden rounded-full bg-white/10">
 
           <div
             style={{
@@ -113,7 +113,7 @@ const ComparisonBars = ({
 
   return (
 
-    <Card className="mt-10 p-8">
+    <Card className="mt-10 p-5 md:p-8">
 
       <h2 className="mb-8 text-3xl font-bold text-white">
 
