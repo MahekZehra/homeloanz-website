@@ -32,9 +32,8 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F5F9FF] py-28">
-
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F5F9FF] py-16 md:py-28">
+    <div className="max-w-7xl mx-auto px-5 sm:px-6"> 
         <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-blue-200/30 blur-[120px]"></div>
 
 <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-cyan-200/20 blur-[140px]"></div>
@@ -43,16 +42,16 @@ function Testimonials() {
 
         <div className="text-center">
 
-          <span className="rounded-full bg-blue-100 px-5 py-2 text-sm font-semibold text-blue-700">
+          <span className="rounded-full bg-blue-100 px-4 py-2 text-xs md:text-sm font-semibold text-blue-700">
             TESTIMONIALS
           </span>
 
-         <h2 className="mt-6 text-5xl font-extrabold tracking-tight text-[#071A35] lg:text-6xl">
+          <h2 className="mt-5 text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight leading-tight text-[#071A35]">
 
             What Our Clients Say
 
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-slate-600">
+          <p className="mx-auto mt-5 max-w-3xl text-base md:text-xl leading-7 md:leading-8 text-slate-600">
 
             Hundreds of homeowners and investors across the UAE trust
             HomeLoanz to make their mortgage journey simple, transparent,
@@ -64,13 +63,13 @@ function Testimonials() {
 
         {/* Cards */}
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 md:mt-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
           {testimonials.map((client, index) => (
 
             <div
               key={index}
-             className="group relative overflow-hidden rounded-[30px] border border-white/60 bg-white/80 backdrop-blur-xl p-8 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:border-blue-200 hover:shadow-[0_25px_60px_rgba(37,99,235,0.18)]"
+             className="group relative overflow-hidden rounded-[30px] border border-white/60 bg-white/80 backdrop-blur-xl p-6 md:p-8 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:border-blue-200 hover:shadow-[0_25px_60px_rgba(37,99,235,0.18)]"
             >
 
               {/* Stars */}
@@ -80,7 +79,7 @@ function Testimonials() {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    size={18}
+                    size={16}
                     fill="currentColor"
                   />
                 ))}
@@ -89,7 +88,7 @@ function Testimonials() {
 
               {/* Review */}
 
-              <p className="mt-6 text-[17px] leading-8 text-slate-600">
+              <p className="mt-5 text-[15px] md:text-[17px] leading-7 md:leading-8 text-slate-600">
 
                 "{client.review}"
 
@@ -101,7 +100,7 @@ function Testimonials() {
 
                 <div className="flex items-center gap-4">
 
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-xl font-bold text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
+                <div className="flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-gradient-to-br from-blue-600 to-cyan-500 text-lg md:text-xl font-bold text-white shadow-lg transition-transform duration-500 group-hover:scale-110">
 
                     {client.initials}
 
@@ -109,13 +108,13 @@ function Testimonials() {
 
                   <div>
 
-                    <h4 className="text-lg font-bold text-[#071A35]">
+                  <h4 className="text-base md:text-lg font-bold text-[#071A35]">
 
                       {client.name}
 
                     </h4>
 
-                    <p className="text-sm text-gray-500">
+                    <p className="text-xs md:text-sm text-gray-500">
 
                       {client.location}
 
@@ -129,7 +128,7 @@ function Testimonials() {
 
               {/* Bank Badge */}
 
-              <div className="mt-8 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-4 py-2 text-sm font-semibold text-emerald-700 ring-1 ring-emerald-200">
+              <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-2 text-xs md:text-sm font-semibold text-emerald-700 ring-1 ring-emerald-200">
 
                 <BadgeCheck size={16} />
 
