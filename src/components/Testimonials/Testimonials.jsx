@@ -32,7 +32,9 @@ const testimonials = [
 
 function Testimonials() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F5F9FF] py-16 md:py-28">
+    <section 
+    id="resources"
+    className="relative overflow-hidden bg-gradient-to-b from-[#F8FAFC] via-white to-[#F5F9FF] py-16 md:py-28">
     <div className="max-w-7xl mx-auto px-5 sm:px-6"> 
         <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-blue-200/30 blur-[120px]"></div>
 

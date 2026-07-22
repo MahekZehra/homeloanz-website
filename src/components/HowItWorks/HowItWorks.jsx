@@ -38,7 +38,9 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section 
+    id="solutions"
+    className="bg-white py-16 md:py-24">
 
       <div className="mx-auto max-w-7xl px-5 sm:px-6">
 

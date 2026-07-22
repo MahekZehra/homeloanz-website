@@ -4,7 +4,9 @@ import MortgageCalculator from "./MortgageCalculator";
 
 function Hero({ openChat }) {
   return (
-    <section className="relative overflow-hidden bg-[#071A35] min-h-screen">
+    <section
+  id="home"
+    className="relative overflow-hidden bg-[#071A35] min-h-screen">
       <BackgroundEffects />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-12 pt-28 md:pt-36 pb-16 md:pb-24">

@@ -65,7 +65,10 @@ const saving =
 
   return (
 
-    <section className="relative overflow-hidden bg-[#07111F] py-16 md:py-24">
+    <section
+  id="calculator"
+  className="relative overflow-hidden bg-[#07111F] py-16 md:py-24"
+>
 
 
       {/* Background Glow */}

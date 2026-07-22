@@ -45,13 +45,14 @@ function HeroContent({ openChat }) {
 
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
 
-        <button className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105">
-
-          <Calculator size={20} />
-
-          Calculate Mortgage
-
-        </button>
+        <button
+  onClick={() =>
+    document.getElementById("calculator")?.scrollIntoView({
+      behavior: "smooth",
+    })
+  }
+  className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105"
+></button>
 
         <button 
         onClick={openChat}
