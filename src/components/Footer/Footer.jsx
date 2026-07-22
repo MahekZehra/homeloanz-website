@@ -101,7 +101,7 @@ function Footer() {
          <div className="mt-8 flex gap-4">
 
   <a
-     href="https://facebook.com/..."
+     href="https://facebook.com/HomeLoanz"
   aria-label="Visit our Facebook page"
     className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-blue-600 transition-all duration-300 flex items-center justify-center"
   >
@@ -109,7 +109,7 @@ function Footer() {
   </a>
 
   <a
-    href="https://instagram.com/..."
+    href="https://instagram.com/HomeLoanz"
   aria-label="Visit our instagram page"
     className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-pink-500 transition-all duration-300 flex items-center justify-center"
   >
@@ -117,7 +117,7 @@ function Footer() {
   </a>
 
   <a
-    href="https://linkedin.com/..."
+    href="https://linkedin.com/HomeLoanz"
   aria-label="Visit our linkedin page"
     className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-sky-600 transition-all duration-300 flex items-center justify-center"
   >
@@ -153,14 +153,12 @@ function Footer() {
                 <li key={link}>
 
                   <a
-                    href="#about"
-About Us
-
                     className="group flex items-center gap-2 text-gray-300 transition hover:text-blue-400"
                   >
 
                     <ArrowUpRight
                       size={16}
+                       aria-hidden="true"
                       className="opacity-0 transition group-hover:opacity-100"
                     />
 
@@ -193,13 +191,13 @@ About Us
                 <li key={item}>
 
                   <a
-                    href="#MortgageSolutions"
-                    mortgageLinks
+                    href="#Solutions"
                     className="group flex items-center gap-2 text-gray-300 transition hover:text-blue-400"
                   >
 
                     <ArrowUpRight
                       size={16}
+                       aria-hidden="true"
                       className="opacity-0 transition group-hover:opacity-100"
                     />
 
@@ -218,8 +216,8 @@ About Us
           {/* Resources */}
 
           <div>
-
-            <h3 className="text-lg md:text-base md:text-xlfont-semibold">
+<h3 className="text-lg md:text-xl font-semibold">
+            
 
               Resources
 
@@ -232,13 +230,13 @@ About Us
                 <li key={item}>
 
                   <a
-                    href="#Resources"
-                    Testimonials
+                    href="#resources"
                     className="group flex items-center gap-2 text-gray-300 transition hover:text-blue-400"
                   >
 
                     <ArrowUpRight
                       size={16}
+                       aria-hidden="true"
                       className="opacity-0 transition group-hover:opacity-100"
                     />
 
@@ -286,12 +284,12 @@ About Us
         href="https://wa.me/971501234567"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 md:bottom-8 md:right-8 flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition duration-300 hover:scale-110 hover:bg-green-600"
       aria-label="Chat with us on WhatsApp"
+      className="fixed bottom-5 right-5 md:bottom-8 md:right-8 flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition duration-300 hover:scale-110 hover:bg-green-600"
       >
 
         💬
-
+       <FaWhatsapp aria-hidden="true" size={16} />
       </a>
 
     </footer>
