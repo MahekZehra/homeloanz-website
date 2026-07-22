@@ -15,12 +15,15 @@ function App() {
   return (
     <>
       <Navbar openChat={() => setIsChatOpen(true)} />
+         <main>
       <Hero openChat={() => setIsChatOpen(true)} />
       <MortgageComparison openChat={() => setIsChatOpen(true)} />
       <Consultation openChat={() => setIsChatOpen(true)} />
       <WhyChooseUs />
       <HowItWorks />
       <Testimonials />
+         </main>
+
       <Footer />
 
 

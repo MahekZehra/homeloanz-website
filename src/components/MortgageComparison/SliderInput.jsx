@@ -20,7 +20,9 @@ const SliderInput = ({
             {icon}
           </div>
 
-          <h4 className="text-sm md:text-base font-medium text-white"></h4>
+          <h4 className="text-sm md:text-base font-medium text-white">
+             {title}
+          </h4>
         </div>
 
         <span className="rounded-full bg-cyan-500/10 px-3 md:px-4 py-1 text-xs md:text-sm font-semibold text-cyan-300">
@@ -31,6 +33,9 @@ const SliderInput = ({
       </div>
 
       {/* Slider */}
+      <label htmlFor={title} className="sr-only">
+  {title}
+</label>
       <input
         type="range"
         min={min}

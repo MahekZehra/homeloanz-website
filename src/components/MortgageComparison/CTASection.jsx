@@ -139,7 +139,7 @@ const CTASection = ({ openChat }) => {
 
           <button 
            onClick={openChat}
-          className="mt-10 flex w-full items-center justify-center gap-3 rounded-xl bg-cyan-500 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-cyan-400">
+          className="mt-10 flex w-full items-center justify-center gap-3 rounded-xl bg-cyan-700 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-cyan-400">
 
             Book Free Consultation
 
@@ -147,7 +147,7 @@ const CTASection = ({ openChat }) => {
 
           </button>
 
-          <p className="mt-5 text-center text-sm text-slate-400">
+          <p className="mt-5 text-center text-sm text-slate-300">
             100% Free • No Hidden Charges • No Obligation
           </p>
 

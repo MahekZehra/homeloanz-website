@@ -29,6 +29,7 @@ const InterestInputs = ({
             <Percent
               className="text-cyan-400"
               size={20}
+               aria-hidden="true"
             />
 
           </div>
@@ -59,7 +60,7 @@ const InterestInputs = ({
 
         <SliderInput
 
-          icon={<TrendingDown size={18} />}
+          icon={<TrendingDown size={18}  aria-hidden="true" />}
 
           title="Interest Rate A"
 
@@ -80,7 +81,7 @@ const InterestInputs = ({
 
         <SliderInput
 
-          icon={<TrendingUp size={18} />}
+          icon={<TrendingUp size={18}  aria-hidden="true" />}
 
           title="Interest Rate B"
 

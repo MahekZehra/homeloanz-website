@@ -111,11 +111,11 @@ function Testimonials() {
 
                   <div>
 
-                  <h4 className="text-base md:text-lg font-bold text-[#071A35]">
+                  <h3 className="text-base md:text-lg font-bold text-[#071A35]">
 
                       {client.name}
 
-                    </h4>
+                    </h3>
 
                     <p className="text-xs md:text-sm text-gray-500">
 

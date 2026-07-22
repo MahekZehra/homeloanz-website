@@ -125,6 +125,7 @@ function Footer() {
   </a>
 
   <a
+  aria-label="Chat with us on WhatsApp"
     href="https://wa.me/971501234567"
     target="_blank"
     rel="noopener noreferrer"

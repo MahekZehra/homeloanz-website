@@ -51,7 +51,7 @@ const PropertyInputs = ({
       <div className="space-y-6 md:space-y-8">
 
         <SliderInput
-          icon={<Building2 size={18} />}
+          icon={<Building2 size={18} aria-hidden="true" />}
           title="Property Price"
           value={propertyPrice}
           setValue={setPropertyPrice}
@@ -62,7 +62,7 @@ const PropertyInputs = ({
         />
 
         <SliderInput
-          icon={<Wallet size={18} />}
+          icon={<Wallet size={18} aria-hidden="true" />}
           title="Down Payment"
           value={downPayment}
           setValue={setDownPayment}
@@ -73,7 +73,7 @@ const PropertyInputs = ({
         />
 
         <SliderInput
-          icon={<Calendar size={18} />}
+          icon={<Calendar size={18} aria-hidden="true" />}
           title="Loan Tenure"
           value={tenure}
           setValue={setTenure}

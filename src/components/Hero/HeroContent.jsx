@@ -88,11 +88,11 @@ function HeroContent({ openChat }) {
 
           <div>
 
-            <h4 className="text-white font-semibold">
+            <p className="text-white font-semibold">
 
               100%
 
-            </h4>
+            </p>
 
             <p className="text-sm text-gray-300">
 
@@ -114,11 +114,11 @@ function HeroContent({ openChat }) {
 
           <div>
 
-            <h4 className="text-white font-semibold">
+            <p className="text-white font-semibold">
 
               24h
 
-            </h4>
+            </p>
 
             <p className="text-sm text-gray-300">
 
