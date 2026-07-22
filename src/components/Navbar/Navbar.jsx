@@ -30,28 +30,21 @@ function Navbar({ openChat }) {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-6 lg:px-8 py-4 md:py-6">
 
         {/* Logo */}
-        <button
+        {/* Logo */}
+<button
   type="button"
   onClick={() => scrollToSection("home")}
-  className="cursor-pointer text-left"
+  className="flex flex-col cursor-pointer text-left"
   aria-label="Go to Home section"
 >
-  <h1 className="text-2xl md:text-3xl font-bold text-white">
+  <h1 className="text-2xl md:text-3xl font-bold text-white leading-none">
     Home<span className="text-blue-500">Loanz</span>
   </h1>
 
-  <p className="text-[10px] md:text-xs text-gray-300 tracking-[0.25em]">
+  <span className="mt-1 text-[10px] md:text-xs text-gray-300 tracking-[0.25em]">
     LLC FZ
-  </p>
+  </span>
 </button>
-
-          <h1 className="text-2xl md:text-3xl font-bold text-white">
-            Home<span className="text-blue-500">Loanz</span>
-          </h1>
-
-          <p className="text-[10px] md:text-xs text-gray-300 tracking-[0.25em]">
-            LLC FZ
-          </p>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-10 text-white font-medium">

@@ -70,7 +70,7 @@ const handleSubmit = async (e) => {
 
         {/* Form Card */}
 
-        <div className="relative mx-auto mt-8 md:mt-20 max-w-6xl overflow-hidden rounded-[34px] border border-white/60 bg-white/80 backdrop-blur-xl p-5 md:p-10 px-4 md:px-6 shadow-[0_30px_80px_rgba(37,99,235,.12)]">
+        <div className="relative mx-auto mt-8 md:mt-20 max-w-6xl overflow-hidden rounded-[34px] border border-white/60 bg-white/80 backdrop-blur-xl p-5 md:p-10 shadow-[0_30px_80px_rgba(37,99,235,.12)]">
 
           {/* Form Starts */}
 
@@ -99,6 +99,7 @@ const handleSubmit = async (e) => {
   name="from_name"
   placeholder="Full Name"
   required
+  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
 />
 
               </div>
@@ -113,8 +114,8 @@ const handleSubmit = async (e) => {
                   size={18}
                 />
 
-                <label htmlFor="fullName" className="sr-only">
-  Full Name
+                <label htmlFor="phone" className="sr-only">
+ Phone Number
 </label>
 
 <input
@@ -123,6 +124,7 @@ const handleSubmit = async (e) => {
                    name="phone"
                   placeholder="Phone Number"
                   required
+                  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
       />            
 
               </div>
@@ -210,10 +212,10 @@ const handleSubmit = async (e) => {
               </div>
 
               {/* Message */}
-            <label htmlFor="message" className="sr-only">
-  Mortgage Requirements
-</label>
               <div className="relative md:col-span-2">
+                <label htmlFor="message" className="sr-only">
+ Mortgage Requirements
+</label>
 
                 <MessageSquare
                  aria-hidden="true"
@@ -258,7 +260,6 @@ const handleSubmit = async (e) => {
   </p>
 )}
 
-              <div className="mt-5 text-sm text-gray-500">
  <div className="mt-8 flex flex-wrap justify-center gap-5 md:gap-8 text-xs md:text-sm text-slate-500">
 
   <div className="flex items-center gap-2">
@@ -284,16 +285,10 @@ const handleSubmit = async (e) => {
     <span>Trusted UAE Banks</span>
 
   </div>
-
+</div>
 
 
 </div>
-
- 
-              </div>
-
- 
-            </div>
 
  </form>
 
