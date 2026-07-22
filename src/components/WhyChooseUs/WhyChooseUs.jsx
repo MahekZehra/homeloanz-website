@@ -90,6 +90,7 @@ function WhyChooseUs() {
 
                   <Icon
                     size={26}
+                    aria-hidden="true"
                     className="text-blue-600 transition group-hover:text-white"
                   />
 

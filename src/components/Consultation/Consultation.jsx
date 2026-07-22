@@ -84,19 +84,22 @@ const handleSubmit = async (e) => {
               <div className="relative">
 
                 <User
+                 aria-hidden="true"
                   className="absolute left-4 top-4 text-gray-400"
                   size={18}
                 />
 
-                <input
-                  type="text"
-                    name="from_name"
-                  placeholder="Full Name"
-                   required
-                  className="h-14 md:h-16 w-full rounded-2xl border border-slate-200 bg-slate-50 focus:border-blue-500
-focus:ring-4
-focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
-                />
+                <label htmlFor="fullName" className="sr-only">
+  Full Name
+</label>
+
+<input
+  id="fullName"
+  type="text"
+  name="from_name"
+  placeholder="Full Name"
+  required
+/>
 
               </div>
 
@@ -105,17 +108,22 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <Phone
-                  className="absolute left-4 top-4 text-gray-400"
+                 aria-hidden="true"
+                  className="absolute left-4 top-4 text-gray-300"
                   size={18}
                 />
 
-                <input
+                <label htmlFor="fullName" className="sr-only">
+  Full Name
+</label>
+
+<input
+                  id="phone"
                   type="tel"
                    name="phone"
                   placeholder="Phone Number"
                   required
-                  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white"
-                />
+      />            
 
               </div>
 
@@ -124,11 +132,16 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <Mail
-                  className="absolute left-4 top-4 text-gray-400"
+                 aria-hidden="true"
+                  className="absolute left-4 top-4 text-gray-300"
                   size={18}
                 />
 
+              <label htmlFor="email" className="sr-only">
+  Email Address
+</label>
                 <input
+                 id="email"
                   type="email"
                     name="from_email"
                   placeholder="Email Address"
@@ -143,11 +156,17 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <Building2
-                  className="absolute left-4 top-4 text-gray-400"
+                 aria-hidden="true"
+                  className="absolute left-4 top-4 text-gray-300"
                   size={18}
                 />
 
+              <label htmlFor="propertyValue" className="sr-only">
+  Property Value
+</label>
+
                 <input
+                id="propertyValue"
                   type="text"
                    name="property_value"
                   placeholder="Property Value (AED)"
@@ -162,16 +181,21 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               <div className="relative">
 
                 <BadgeCheck
-                  className="absolute left-4 top-4 text-gray-400"
+                 aria-hidden="true"
+                  className="absolute left-4 top-4 text-gray-300"
                   size={18}
                 />
 
+<label htmlFor="residentStatus" className="sr-only">
+  Resident Status
+</label>
                 <select 
+                 id="residentStatus"
                   name="resident_status"
                  required
                  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white">
 
-                  <option>Resident Status</option>
+                  <option value="" disabled> Select Resident Status</option>
 
                   <option>UAE Resident</option>
 
@@ -186,15 +210,19 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
               </div>
 
               {/* Message */}
-
+            <label htmlFor="message" className="sr-only">
+  Mortgage Requirements
+</label>
               <div className="relative md:col-span-2">
 
                 <MessageSquare
-                  className="absolute left-4 top-4 text-gray-400"
+                 aria-hidden="true"
+                  className="absolute left-4 top-4 text-gray-300"
                   size={18}
                 />
 
                 <textarea
+                id="message"
                   rows="5"
                    name="message"
   required
@@ -211,7 +239,8 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
 
               <button
                 type="submit"
-                 onClick={openChat}
+                aria-label="Submit mortgage consultation form"
+                 
                 
                 className="rounded-2xl bg-gradient-to-r from-[#2563EB] to-[#3B82F6] hover:shadow-[0_15px_40px_rgba(37,99,235,.35)] px-8 md:px-12 py-4 md:py-5 text-base md:text-lg font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:shadow-blue-300"
               >

@@ -101,24 +101,27 @@ function Footer() {
          <div className="mt-8 flex gap-4">
 
   <a
-    href="#"
+     href="https://facebook.com/..."
+  aria-label="Visit our Facebook page"
     className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-blue-600 transition-all duration-300 flex items-center justify-center"
   >
-    <FaFacebookF size={16} />
+    <FaFacebookF aria-hidden="true"  size={16} />
   </a>
 
   <a
-    href="#"
+    href="https://instagram.com/..."
+  aria-label="Visit our instagram page"
     className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-pink-500 transition-all duration-300 flex items-center justify-center"
   >
-    <FaInstagram size={16} />
+    <FaInstagram aria-hidden="true" size={16} />
   </a>
 
   <a
-    href="#"
+    href="https://linkedin.com/..."
+  aria-label="Visit our linkedin page"
     className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-white/10 hover:bg-sky-600 transition-all duration-300 flex items-center justify-center"
   >
-    <FaLinkedinIn size={16} />
+    <FaLinkedinIn aria-hidden="true" size={16} />
   </a>
 
   <a
@@ -127,7 +130,7 @@ function Footer() {
     rel="noopener noreferrer"
     className="h-10 w-10 md:h-11 md:w-11 rounded-xl bg-green-600 hover:bg-green-700 transition-all duration-300 flex items-center justify-center"
   >
-    <FaWhatsapp size={16} />
+    <FaWhatsapp  aria-hidden="true" size={16} />
   </a>
             </div>
 
@@ -150,7 +153,9 @@ function Footer() {
                 <li key={link}>
 
                   <a
-                    href="#"
+                    href="#about"
+About Us
+
                     className="group flex items-center gap-2 text-gray-300 transition hover:text-blue-400"
                   >
 
@@ -188,7 +193,8 @@ function Footer() {
                 <li key={item}>
 
                   <a
-                    href="#"
+                    href="#MortgageSolutions"
+                    mortgageLinks
                     className="group flex items-center gap-2 text-gray-300 transition hover:text-blue-400"
                   >
 
@@ -226,7 +232,8 @@ function Footer() {
                 <li key={item}>
 
                   <a
-                    href="#"
+                    href="#Resources"
+                    Testimonials
                     className="group flex items-center gap-2 text-gray-300 transition hover:text-blue-400"
                   >
 
@@ -257,13 +264,13 @@ function Footer() {
 
         <div className="max-w-7xl mx-auto px-5 sm:px-6 py-5 md:py-6 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
 
-          <p className="text-gray-400 text-xs md:text-sm">
+          <p className="text-gray-300 text-xs md:text-sm">
 
             © 2026 HomeLoanz LLC. All Rights Reserved.
 
           </p>
 
-          <p className="text-gray-400 text-xs md:text-sm">
+          <p className="text-gray-300 text-xs md:text-sm">
 
             Designed & Developed with ❤️ using React & Tailwind CSS
 
@@ -280,6 +287,7 @@ function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 md:bottom-8 md:right-8 flex h-14 w-14 md:h-16 md:w-16 items-center justify-center rounded-full bg-green-500 text-white shadow-2xl transition duration-300 hover:scale-110 hover:bg-green-600"
+      aria-label="Chat with us on WhatsApp"
       >
 
         💬

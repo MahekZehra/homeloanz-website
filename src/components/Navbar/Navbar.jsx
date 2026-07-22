@@ -30,10 +30,13 @@ function Navbar({ openChat }) {
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-6 lg:px-8 py-4 md:py-6">
 
         {/* Logo */}
-        <div
-          className="cursor-pointer"
-          onClick={() => scrollToSection("home")}
-        >
+        <button
+  type="button"
+  onClick={() => scrollToSection("home")}
+  className="cursor-pointer text-left"
+  aria-label="Go to Home section">
+  </button>
+
           <h1 className="text-2xl md:text-3xl font-bold text-white">
             Home<span className="text-blue-500">Loanz</span>
           </h1>
@@ -41,7 +44,6 @@ function Navbar({ openChat }) {
           <p className="text-[10px] md:text-xs text-gray-300 tracking-[0.25em]">
             LLC FZ
           </p>
-        </div>
 
         {/* Desktop Menu */}
         <ul className="hidden lg:flex items-center gap-10 text-white font-medium">
@@ -57,25 +59,30 @@ function Navbar({ openChat }) {
         </ul>
 
         {/* Desktop Button */}
-        <button
-          onClick={openChat}
-          className="hidden lg:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition"
-        >
+        <button>
+  type="button"
+  onClick={openChat}
+  aria-label="Book a consultation"
           Book Consultation
         </button>
 
         {/* Mobile Icon */}
         <button
-          onClick={() => setMenuOpen(!menuOpen)}
-          className="lg:hidden text-white text-2xl"
-        >
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
+  onClick={() => setMenuOpen(!menuOpen)}
+  className="lg:hidden text-white text-2xl"
+  aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
+  aria-expanded={menuOpen}
+  aria-controls="mobile-menu">
+  {menuOpen ? <FaTimes /> : <FaBars />}
+</button>
       </nav>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="lg:hidden bg-[#071A35] border-t border-white/10">
+        <div
+  id="mobile-menu"
+  className="lg:hidden bg-[#071A35] border-t border-white/10"
+>
           <ul className="flex flex-col py-4">
 
             {menuItems.map((item) => (

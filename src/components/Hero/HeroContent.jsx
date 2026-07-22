@@ -23,12 +23,12 @@ function HeroContent({ openChat }) {
       <h1 className="mt-6 md:mt-8 text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
 
         Home Financing
+<br />
 
-      </h1>
-
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
+     <span className="text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
 
         Made Simple
+         </span>
 
       </h1>
 
@@ -46,6 +46,8 @@ function HeroContent({ openChat }) {
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
 
         <button
+        type="button"
+        aria-label="Go to Mortgage Calculator"
   onClick={() =>
     document.getElementById("calculator")?.scrollIntoView({
       behavior: "smooth",
@@ -53,15 +55,18 @@ function HeroContent({ openChat }) {
   }
   className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105"
 >
-  <Calculator size={20} />
-  Calculate Mortgage
+  <Calculator size={20} 
+  aria-hidden="true" />
+  Calculate Mortgage 
 </button>
 
         <button 
+        type="button"
+        aria-label= "Speak to a mortgage expert"
         onClick={openChat}
         className="flex items-center gap-3 rounded-xl border border-gray-500 px-8 py-4 font-semibold text-white transition hover:border-blue-500 hover:bg-white/5">
 
-          <Headphones size={20} />
+          <Headphones size={20}  aria-hidden="true"/>
 
           Speak to an Expert
 
@@ -77,7 +82,7 @@ function HeroContent({ openChat }) {
 
           <div className="rounded-full bg-blue-500/10 p-3">
 
-            <ShieldCheck className="text-blue-400" size={20} />
+            <ShieldCheck className="text-blue-400" size={20}  aria-hidden="true"/>
 
           </div>
 
@@ -89,7 +94,7 @@ function HeroContent({ openChat }) {
 
             </h4>
 
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-300">
 
               Secure Process
 
@@ -103,7 +108,7 @@ function HeroContent({ openChat }) {
 
           <div className="rounded-full bg-blue-500/10 p-3">
 
-            <Clock3 className="text-blue-400" size={20} />
+            <Clock3 className="text-blue-400" size={20}  aria-hidden="true"/>
 
           </div>
 
@@ -115,7 +120,7 @@ function HeroContent({ openChat }) {
 
             </h4>
 
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-300">
 
               Quick Response
 

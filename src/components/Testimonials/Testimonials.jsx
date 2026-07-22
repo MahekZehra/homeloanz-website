@@ -80,6 +80,7 @@ function Testimonials() {
 
                 {[...Array(5)].map((_, i) => (
                   <Star
+                  aria-hidden="true"
                     key={i}
                     size={16}
                     fill="currentColor"
@@ -132,7 +133,7 @@ function Testimonials() {
 
               <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-emerald-50 px-3 py-2 text-xs md:text-sm font-semibold text-emerald-700 ring-1 ring-emerald-200">
 
-                <BadgeCheck size={16} />
+                <BadgeCheck size={16} aria-hidden="true" />
 
                 Financed by {client.bank}
 
