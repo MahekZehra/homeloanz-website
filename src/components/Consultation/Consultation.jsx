@@ -95,6 +95,7 @@ const handleSubmit = async (e) => {
 
 <input
   id="fullName"
+   aria-label="Full Name"
   type="text"
   name="from_name"
   placeholder="Full Name"
@@ -120,6 +121,7 @@ const handleSubmit = async (e) => {
 
 <input
                   id="phone"
+                   aria-label="Phone Number"
                   type="tel"
                    name="phone"
                   placeholder="Phone Number"
@@ -144,6 +146,7 @@ const handleSubmit = async (e) => {
 </label>
                 <input
                  id="email"
+                 aria-label="Email Address"
                   type="email"
                     name="from_email"
                   placeholder="Email Address"
@@ -169,6 +172,7 @@ const handleSubmit = async (e) => {
 
                 <input
                 id="propertyValue"
+                 aria-label="Property Value"
                   type="text"
                    name="property_value"
                   placeholder="Property Value (AED)"
@@ -193,6 +197,7 @@ const handleSubmit = async (e) => {
 </label>
                 <select 
                  id="residentStatus"
+                  aria-label="Resident Status"
                   name="resident_status"
                  required
                  className="h-14 md:h-16 w-full rounded-2xl border border-gray-200 bg-gray-50 pl-14 pr-4 outline-none transition focus:border-blue-600 focus:bg-white">
@@ -225,6 +230,7 @@ const handleSubmit = async (e) => {
 
                 <textarea
                 id="message"
+                 aria-label="Mortgage Requirements"
                   rows="5"
                    name="message"
   required
