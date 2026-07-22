@@ -10,6 +10,7 @@ const BestScenarioCard = ({
   loanAmount,
   totalInterest,
   totalPayment,
+   openChat,
 }) => {
   const stats = [
     {
@@ -82,6 +83,7 @@ const BestScenarioCard = ({
             </p>
 
             <button
+            onClick={openChat}
               className="
                 mt-8
                 rounded-xl

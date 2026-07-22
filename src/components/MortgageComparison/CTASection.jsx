@@ -9,7 +9,7 @@ import {
 
 import Card from "../ui/Card";
 
-const CTASection = () => {
+const CTASection = ({ openChat }) => {
   return (
     <Card className="relative mt-14 overflow-hidden rounded-3xl border border-cyan-500/20 bg-gradient-to-r from-[#071A35] via-[#0D2B52] to-[#071A35] p-6 md:p-10">
 
@@ -137,7 +137,9 @@ const CTASection = () => {
 
           </div>
 
-          <button className="mt-10 flex w-full items-center justify-center gap-3 rounded-xl bg-cyan-500 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-cyan-400">
+          <button 
+           onClick={openChat}
+          className="mt-10 flex w-full items-center justify-center gap-3 rounded-xl bg-cyan-500 px-8 py-4 text-lg font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-cyan-400">
 
             Book Free Consultation
 

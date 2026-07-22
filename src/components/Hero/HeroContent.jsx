@@ -1,6 +1,6 @@
 import { ShieldCheck, Headphones, Calculator, Clock3 } from "lucide-react";
 
-function HeroContent() {
+function HeroContent({ openChat }) {
   return (
   <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-12 pt-12 md:pt-20 pb-16 md:pb-24">
 
@@ -53,7 +53,9 @@ function HeroContent() {
 
         </button>
 
-        <button className="flex items-center gap-3 rounded-xl border border-gray-500 px-8 py-4 font-semibold text-white transition hover:border-blue-500 hover:bg-white/5">
+        <button 
+        onClick={openChat}
+        className="flex items-center gap-3 rounded-xl border border-gray-500 px-8 py-4 font-semibold text-white transition hover:border-blue-500 hover:bg-white/5">
 
           <Headphones size={20} />
 

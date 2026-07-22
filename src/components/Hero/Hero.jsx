@@ -2,21 +2,19 @@ import BackgroundEffects from "./BackgroundEffects";
 import HeroContent from "./HeroContent";
 import MortgageCalculator from "./MortgageCalculator";
 
-function Hero() {
+function Hero({ openChat }) {
   return (
     <section className="relative overflow-hidden bg-[#071A35] min-h-screen">
       <BackgroundEffects />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-12 pt-28 md:pt-36 pb-16 md:pb-24">
-
         <div className="grid lg:grid-cols-2 gap-10 items-center">
 
-          <HeroContent />
+          <HeroContent openChat={openChat} />
 
           <MortgageCalculator />
 
         </div>
-
       </div>
     </section>
   );

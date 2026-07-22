@@ -11,7 +11,7 @@ import ComparisonBars from "./ComparisonBars";
 import CTASection from "./CTASection";
 import { calculateMortgage } from "./mortgageUtils";
 
-const MortgageComparison = () => {
+const MortgageComparison = ({ openChat }) => {
 
   // Loan Details
 
@@ -158,6 +158,7 @@ const saving =
   loanAmount={bestOption.loanAmount}
   totalInterest={bestOption.totalInterest}
   totalPayment={bestOption.totalPayment}
+  openChat={openChat}
 /> 
 
 <MortgageSummary
@@ -204,7 +205,9 @@ const saving =
   bestOption={bestOption}
 />
 
-<CTASection />
+<CTASection
+   openChat={openChat}
+/>
 
 <div className="mt-12 border-t border-white/10 pt-8">
 <div className="mx-auto mt-2 flex max-w-3xl items-start justify-center gap-2 px-2">

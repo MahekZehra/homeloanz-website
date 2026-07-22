@@ -1,6 +1,6 @@
 import { FaBars } from "react-icons/fa";
 
-function Navbar() {
+function Navbar({ openChat }) {
   return (
     <header className="absolute top-0 left-0 w-full z-50">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-6 lg:px-8 py-4 md:py-6">
@@ -26,7 +26,9 @@ function Navbar() {
         </ul>
 
         {/* CTA Button */}
-        <button className="hidden lg:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">
+        <button 
+        onClick={openChat}
+        className="hidden lg:block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition">
           Book Consultation
         </button>
 

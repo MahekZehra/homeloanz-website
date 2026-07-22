@@ -10,7 +10,7 @@ import {
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
-function Consultation() {
+function Consultation({ openChat }) {
     const [status, setStatus] = useState("");
 const [loading, setLoading] = useState(false);
 
@@ -211,7 +211,8 @@ focus:ring-blue-100 pl-14 pr-4 outline-none transition  focus:bg-white"
 
               <button
                 type="submit"
-                 disabled={loading}
+                 onClick={openChat}
+                
                 className="rounded-2xl bg-gradient-to-r from-[#2563EB] to-[#3B82F6] hover:shadow-[0_15px_40px_rgba(37,99,235,.35)] px-8 md:px-12 py-4 md:py-5 text-base md:text-lg font-semibold text-white shadow-lg transition duration-300 hover:scale-105 hover:shadow-blue-300"
               >
                  {loading ? "Sending..." : "Submit Inquiry"}
