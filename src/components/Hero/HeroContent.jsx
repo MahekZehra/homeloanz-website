@@ -52,7 +52,10 @@ function HeroContent({ openChat }) {
     })
   }
   className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105"
-></button>
+>
+  <Calculator size={20} />
+  Calculate Mortgage
+</button>
 
         <button 
         onClick={openChat}
