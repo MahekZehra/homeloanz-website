@@ -26,7 +26,7 @@ function Navbar({ openChat }) {
   };
 
   return (
-    <header className="absolute top-0 left-0 w-full z-50">
+    <header className="absolute top-0 left-0 w-full z-50 bg-transparent">
       <nav className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-6 lg:px-8 py-4 md:py-6">
 
         {/* Logo */}
@@ -34,8 +34,16 @@ function Navbar({ openChat }) {
   type="button"
   onClick={() => scrollToSection("home")}
   className="cursor-pointer text-left"
-  aria-label="Go to Home section">
-  </button>
+  aria-label="Go to Home section"
+>
+  <h1 className="text-2xl md:text-3xl font-bold text-white">
+    Home<span className="text-blue-500">Loanz</span>
+  </h1>
+
+  <p className="text-[10px] md:text-xs text-gray-300 tracking-[0.25em]">
+    LLC FZ
+  </p>
+</button>
 
           <h1 className="text-2xl md:text-3xl font-bold text-white">
             Home<span className="text-blue-500">Loanz</span>
@@ -59,15 +67,18 @@ function Navbar({ openChat }) {
         </ul>
 
         {/* Desktop Button */}
-        <button>
+        <button
   type="button"
   onClick={openChat}
   aria-label="Book a consultation"
-          Book Consultation
-        </button>
+  className="hidden lg:block rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
+>
+  Book Consultation
+</button>
 
         {/* Mobile Icon */}
         <button
+        type="button"
   onClick={() => setMenuOpen(!menuOpen)}
   className="lg:hidden text-white text-2xl"
   aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
