@@ -7,7 +7,7 @@ function Navbar({ openChat }) {
   const menuItems = [
     { name: "Home", id: "home" },
     { name: "About Us", id: "about" },
-    { name: "Mortgage Solutions", id: "solutions" },
+    { name: "Mortgage Solutions", id: "calculator" },
     { name: "Calculator", id: "calculator" },
     { name: "Resources", id: "resources" },
     { name: "Contact", id: "contact" },

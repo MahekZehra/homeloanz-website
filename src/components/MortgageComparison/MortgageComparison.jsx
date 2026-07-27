@@ -94,14 +94,15 @@ const saving =
 
         <SectionHeading
 
-          badge="Compare Mortgage Rates"
+          badge="UAE Mortgage Calculator & Rate Comparison"
 
-          title="Find Your Best Mortgage Scenario"
+          title="Mortgage Calculator & Home Loan Comparison in Dubai, UAE"
 
           description="
-          Compare different mortgage rates and instantly understand
-          how interest changes your monthly payment and total cost.
-          "
+        Use our free UAE mortgage calculator to compare home loan interest rates,
+        estimate your monthly payments, and choose the best mortgage option for
+        buying property in Dubai and across the UAE.
+        "
 
         />
 
@@ -208,6 +209,21 @@ const saving =
   bestOption={bestOption}
 />
 
+
+<div className="mt-12 max-w-4xl mx-auto text-slate-300">
+  <h2 className="text-3xl font-bold text-white">
+    How Our UAE Mortgage Calculator Works
+  </h2>
+
+  <p className="mt-6 leading-8">
+    Our mortgage calculator helps UAE residents and property investors estimate
+    monthly repayments based on property price, down payment, loan tenure, and
+    interest rates. While the results are estimates, they provide a helpful
+    starting point for comparing mortgage options before speaking with one of
+    our mortgage advisors.
+  </p>
+</div>
+
 <CTASection
    openChat={openChat}
 />
@@ -237,10 +253,6 @@ const saving =
     </p>
 
   </div>
-
-  <p className="mt-6 text-center text-sm text-slate-500">
-    © {new Date().getFullYear()} HomeLoanz LLC. All Rights Reserved.
-  </p>
 
 </div>
 

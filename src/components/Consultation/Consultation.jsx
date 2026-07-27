@@ -39,7 +39,10 @@ const handleSubmit = async (e) => {
 };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#F7FAFF] via-white to-[#EEF5FF] py-16 md:py-28">
+    <section
+  id="contact"
+  className="relative overflow-hidden bg-gradient-to-b from-[#F7FAFF] via-white to-[#EEF5FF] py-16 md:py-28"
+>
 
      <div className="absolute -left-24 top-24 h-80 w-80 rounded-full bg-blue-200/30 blur-[130px]"></div>
 

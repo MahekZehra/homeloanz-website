@@ -38,7 +38,6 @@ const resources = [
 function Footer() {
   return (
     <footer 
-    id="contact"
     className="bg-[#071A35] text-white">
 
       {/* Top Section */}
