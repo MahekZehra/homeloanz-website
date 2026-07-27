@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import MortgageComparison from "./components/MortgageComparison/MortgageComparison";
-import Consultation from "./components/Consultation/Consultation";
-import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
-import MortgageSolutions from "./components/MortgageSolutions/MortgageSolutions";
-import Resources from "./components/Resources/Resources";
-import HowItWorks from "./components/HowItWorks/HowItWorks";
-import Testimonials from "./components/Testimonials/Testimonials";
-import FAQ from "./components/FAQ/FAQ";
+const WhyChooseUs = lazy(() => import("./components/WhyChooseUs/WhyChooseUs"));
+const MortgageSolutions = lazy(() => import("./components/MortgageSolutions/MortgageSolutions"));
+const Resources = lazy(() => import("./components/Resources/Resources"));
+const MortgageComparison = lazy(() => import("./components/MortgageComparison/MortgageComparison"));
+const HowItWorks = lazy(() => import("./components/HowItWorks/HowItWorks"));
+const Consultation = lazy(() => import("./components/Consultation/Consultation"));
+const Testimonials = lazy(() => import("./components/Testimonials/Testimonials"));
+const FAQ = lazy(() => import("./components/FAQ/FAQ"));
 import Footer from "./components/Footer/Footer";
 
 
@@ -18,6 +18,13 @@ function App() {
   return (
     <>
       <Navbar openChat={() => setIsChatOpen(true)} />
+        <Suspense
+  fallback={
+    <div className="flex items-center justify-center min-h-screen text-lg">
+      Loading...
+    </div>
+  }
+>
          <main>
       <Hero openChat={() => setIsChatOpen(true)} />
       <WhyChooseUs />
@@ -29,6 +36,8 @@ function App() {
       <Testimonials />
       <FAQ />
          </main>
+         </Suspense>
+
       <Footer />
 
       {isChatOpen && (

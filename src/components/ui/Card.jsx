@@ -1,22 +1,10 @@
-import { motion } from "framer-motion";
-
 const Card = ({
   children,
   className = "",
   hover = true,
 }) => {
   return (
-    <motion.div
-      whileHover={
-        hover
-          ? {
-              y: -6,
-              transition: {
-                duration: 0.25,
-              },
-            }
-          : {}
-      }
+    <div
       className={`
         relative
         overflow-hidden
@@ -26,6 +14,8 @@ const Card = ({
         bg-white/5
         backdrop-blur-xl
         shadow-[0_20px_60px_rgba(0,0,0,.25)]
+        transition-all duration-300
+        ${hover ? "hover:-translate-y-1.5" : ""}
         ${className}
       `}
     >
@@ -39,7 +29,7 @@ const Card = ({
 
       </div>
 
-    </motion.div>
+    </div>
   );
 };
 

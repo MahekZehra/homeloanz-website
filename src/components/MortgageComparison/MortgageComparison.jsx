@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import SectionHeading from "../ui/SectionHeading";
 import PropertyInputs from "./PropertyInputs";
 import InterestInputs from "./InterestInputs";
@@ -6,8 +6,8 @@ import ComparisonCard from "./ComparisonCard";
 import BestScenarioCard from "./BestScenarioCard";
 import MortgageSummary from "./MortgageSummary";
 import LoanBreakdown from "./LoanBreakdown";
-import MortgageCharts from "./MortgageCharts";
-import ComparisonBars from "./ComparisonBars";
+const MortgageCharts = lazy(() => import("./MortgageCharts"));
+const ComparisonBars = lazy(() => import("./ComparisonBars"));
 import CTASection from "./CTASection";
 import { calculateMortgage } from "./mortgageUtils";
 
@@ -192,10 +192,18 @@ const saving =
   />
 </div>
 
+<Suspense
+  fallback={
+    <div className="mt-6 text-center text-slate-400">
+      Loading Comparison...
+    </div>
+  }
+>
 <ComparisonBars
   optionA={optionA}
   optionB={optionB}
 />
+</Suspense>
 
 <LoanBreakdown
   loanAmount={bestOption.loanAmount}
@@ -203,12 +211,19 @@ const saving =
   totalPayment={bestOption.totalPayment}
 />
 
+<Suspense
+  fallback={
+    <div className="mt-10 text-center text-slate-400">
+      Loading Charts...
+    </div>
+  }
+>
 <MortgageCharts
   optionA={optionA}
   optionB={optionB}
   bestOption={bestOption}
 />
-
+</Suspense>
 
 <div className="mt-12 max-w-4xl mx-auto text-slate-300">
   <h2 className="text-3xl font-bold text-white">
