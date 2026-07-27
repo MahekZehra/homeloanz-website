@@ -12,7 +12,7 @@ const FAQ = lazy(() => import("./components/FAQ/FAQ"));
 import Footer from "./components/Footer/Footer";
 
 
-import ChatBot from "./components/ChatBot/ChatBot";
+const ChatBot = lazy(() => import("./components/ChatBot/ChatBot"));
 function App() {
   const [isChatOpen, setIsChatOpen] = useState(false);
   return (
@@ -39,12 +39,13 @@ function App() {
          </Suspense>
 
       <Footer />
-
+    <Suspense fallback={null}>
       {isChatOpen && (
   <ChatBot
     closeChat={() => setIsChatOpen(false)}
   />
 )}
+</Suspense>
 
 </>
   )

@@ -1,24 +1,24 @@
 function BackgroundEffects() {
   return (
     <>
-      {/* Main Blue Glow */}
-      <div className="absolute top-20 right-[-150px] w-[650px] h-[650px] rounded-full bg-blue-600/20 blur-[170px]" />
+      {/* Main Glow */}
+      <div className="absolute top-20 right-[-120px] w-[500px] h-[500px] rounded-full bg-blue-600/15 blur-[120px]" />
 
       {/* Left Glow */}
-      <div className="absolute bottom-[-250px] left-[-180px] w-[450px] h-[450px] rounded-full bg-cyan-500/10 blur-[150px]" />
+      <div className="absolute bottom-[-180px] left-[-120px] w-[320px] h-[320px] rounded-full bg-cyan-500/10 blur-[100px]" />
 
       {/* Center Glow */}
-      <div className="absolute top-[35%] left-[40%] w-[350px] h-[350px] rounded-full bg-blue-500/10 blur-[120px]" />
+      <div className="absolute top-[35%] left-[40%] w-[250px] h-[250px] rounded-full bg-blue-500/10 blur-[90px]" />
 
-      {/* Decorative Circles */}
-      <div className="absolute right-0 top-0 w-[700px] h-[700px] rounded-full border border-blue-500/10"></div>
+      {/* Decorative Rings */}
+      <div className="absolute right-0 top-0 w-[550px] h-[550px] rounded-full border border-blue-500/10" />
 
-      <div className="absolute right-20 top-20 w-[560px] h-[560px] rounded-full border border-blue-500/10"></div>
+      <div className="absolute right-16 top-16 w-[420px] h-[420px] rounded-full border border-blue-500/10" />
 
-      <div className="absolute right-40 top-40 w-[420px] h-[420px] rounded-full border border-blue-500/10"></div>
+      <div className="absolute right-32 top-32 w-[300px] h-[300px] rounded-full border border-blue-500/10" />
 
       {/* Bottom Fade */}
-      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-t from-[#071A35] to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#071A35] to-transparent" />
     </>
   );
 }

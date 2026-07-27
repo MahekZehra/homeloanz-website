@@ -20,7 +20,7 @@ function HeroContent({ openChat }) {
 
       {/* Heading */}
 
-      <h1 className="mt-6 md:mt-8 text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
+      <h1 className="mt-6 md:mt-8 text-4xl sm:text-5xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
 
         Trusted Mortgage Broker in Dubai, UAE
 <br />
@@ -52,7 +52,7 @@ function HeroContent({ openChat }) {
       behavior: "smooth",
     })
   }
-  className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-105"
+  className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-[1.02]"
 >
   <Calculator size={20} 
   aria-hidden="true" />

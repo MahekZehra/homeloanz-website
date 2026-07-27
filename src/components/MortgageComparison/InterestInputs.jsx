@@ -16,7 +16,9 @@ const InterestInputs = ({
 }) => {
 
   return (
-    <Card className="p-5 md:p-8">
+    <Card 
+     aria-labelledby="interest-comparison-heading"
+    className="p-5 md:p-8">
 
       {/* Header */}
 
@@ -37,7 +39,9 @@ const InterestInputs = ({
 
           <div>
 
-            <h3 className="text-base md:text-xl md:text-2xl font-bold text-white">
+            <h3 
+              id="interest-comparison-heading"
+            className="text-base md:text-xl md:text-2xl font-bold text-white">
               Interest Comparison
             </h3>
 

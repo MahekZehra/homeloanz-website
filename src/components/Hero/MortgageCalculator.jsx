@@ -37,11 +37,11 @@ function MortgageCalculator() {
   ]);
 
   return (
-    <div className="relative w-full max-w-[540px] rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-2xl shadow-[0_25px_80px_rgba(37,99,235,.18)] overflow-hidden">
+    <div className="relative w-full max-w-[540px] rounded-[30px] border border-white/10 bg-white/5 backdrop-blur-md shadow-2xl overflow-hidden">
 
       {/* Glow */}
 
-      <div className="absolute -top-24 -right-20 h-56 w-56 rounded-full bg-blue-500/20 blur-3xl"></div>
+      <div className="absolute -top-20 -right-16 h-40 w-40 rounded-full bg-blue-500/15 blur-2xl"></div>
 
       <div className="relative p-8">
 
@@ -77,12 +77,15 @@ function MortgageCalculator() {
 
             <Home className="text-blue-400" size={20} />
 
-            <input
-              type="number"
-              value={propertyPrice}
-              onChange={(e) =>
-                setPropertyPrice(Number(e.target.value))
-              }
+            <label htmlFor="propertyPrice">
+Property Price (AED)
+</label>
+
+<input
+id="propertyPrice"
+type="number"
+value={propertyPrice}
+onChange={(e)=>setPropertyPrice(e.target.value)}
               className="w-full bg-transparent text-lg font-semibold text-white outline-none"
             />
 
@@ -121,15 +124,15 @@ function MortgageCalculator() {
 
             <Percent className="text-blue-400" size={20} />
 
-            <input
-              type="number"
-              min="10"
-              max="50"
-              value={downPayment}
-              onChange={(e) =>
-                setDownPayment(Number(e.target.value))
-              }
-              className="w-full bg-transparent text-lg font-semibold text-white outline-none"
+            <label htmlFor="downPayment">
+Down Payment (%)
+            </label>
+
+          <input
+          id="downPayment"
+          type="number"
+          value={downPayment}
+          className="w-full bg-transparent text-lg font-semibold text-white outline-none"
             />
 
             <span className="text-white">%</span>

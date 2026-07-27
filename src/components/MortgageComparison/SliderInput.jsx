@@ -10,6 +10,7 @@ const SliderInput = ({
   suffix = "",
 }) => {
   const percentage = ((value - min) / (max - min)) * 100;
+  const inputId = title.replace(/\s+/g, "-").toLowerCase();
 
   return (
     <div className="space-y-4 md:space-y-5">
@@ -33,15 +34,20 @@ const SliderInput = ({
       </div>
 
       {/* Slider */}
-      <label htmlFor={title} className="sr-only">
+      <label htmlFor={inputId} className="sr-only">
   {title}
 </label>
       <input
+       id={inputId}
         type="range"
         min={min}
         max={max}
         step={step}
         value={value}
+        aria-label={title}
+        aria-valuemin={min}
+        aria-valuemax={max}
+        aria-valuenow={value}
         onChange={(e) => setValue(Number(e.target.value))}
         className="slider-premium w-full"
         style={{

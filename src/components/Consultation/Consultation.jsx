@@ -79,7 +79,10 @@ const handleSubmit = async (e) => {
 
          <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-400"></div>
 
-           <form onSubmit={handleSubmit}>
+           <form 
+           onSubmit={handleSubmit}
+           aria-label="Mortgage consultation form"
+           >
             <div className="grid gap-6 md:grid-cols-2">
 
               {/* Full Name */}

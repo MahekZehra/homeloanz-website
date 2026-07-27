@@ -16,7 +16,10 @@ const PropertyInputs = ({
   setTenure,
 }) => {
   return (
-  <Card className="p-5 md:p-8"> 
+  <Card
+  className="p-5 md:p-8"
+  aria-labelledby="loan-details-heading"
+>
 
       {/* Header */}
 
@@ -32,9 +35,12 @@ const PropertyInputs = ({
 
           <div>
 
-            <h3 className="text-base md:text-xl md:text-2xl font-bold text-white">
-              Loan Details
-            </h3>
+            <h3
+  id="loan-details-heading"
+  className="text-base md:text-xl md:text-2xl font-bold text-white"
+>
+  Loan Details
+</h3>
 
             <p className="mt-1 text-xs md:text-sm text-slate-400">
                Set your loan amount, down payment and tenure

@@ -67,6 +67,7 @@ const saving =
 
     <section
   id="calculator"
+  aria-labelledby="mortgage-calculator-heading"
   className="relative overflow-hidden bg-[#07111F] py-16 md:py-24"
 >
 
@@ -93,6 +94,7 @@ const saving =
         {/* Heading */}
 
         <SectionHeading
+        id="mortgage-calculator-heading"
 
           badge="UAE Mortgage Calculator & Rate Comparison"
 
@@ -248,6 +250,7 @@ const saving =
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
       className="mt-1 h-5 w-5 text-cyan-400"
       fill="none"
       viewBox="0 0 24 24"

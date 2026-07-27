@@ -48,15 +48,58 @@ content="HomeLoanz LLC is a trusted mortgage broker in Dubai helping residents a
 <meta name="msapplication-TileColor" content="#071A35" />
 
 <link rel="canonical" href="https://www.homeloanzllc.com/" />
+<link rel="preconnect" href="https://www.googletagmanager.com" />
+<link rel="preconnect" href="https://www.google-analytics.com" />
+<link rel="preconnect" href="https://www.clarity.ms" />
+<link rel="dns-prefetch" href="//www.googletagmanager.com" />
+<link rel="dns-prefetch" href="//www.google-analytics.com" />
+<link rel="dns-prefetch" href="//www.clarity.ms" />
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V23P3F73MM"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+window.addEventListener("load", function () {
 
-  gtag('config', 'G-V23P3F73MM');
+  // Google Analytics
+  const gaScript = document.createElement("script");
+  gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-V23P3F73MM";
+  gaScript.async = true;
+
+  document.head.appendChild(gaScript);
+
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){
+    dataLayer.push(arguments);
+  }
+
+  window.gtag = gtag;
+
+  gtag("js", new Date());
+
+  gtag("config", "G-V23P3F73MM");
+
+
+  // Microsoft Clarity
+
+  (function(c,l,a,r,i,t,y){
+
+      c[a]=c[a]||function(){
+        (c[a].q=c[a].q||[]).push(arguments)
+      };
+
+      t=l.createElement(r);
+      t.async=1;
+      t.src="https://www.clarity.ms/tag/"+i;
+
+      y=l.getElementsByTagName(r)[0];
+
+      y.parentNode.insertBefore(t,y);
+
+  })(window, document, "clarity", "script", "YOUR_CLARITY_ID");
+
+
+});
 </script>
 
 <script type="text/javascript">

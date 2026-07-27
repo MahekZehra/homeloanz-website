@@ -1,6 +1,7 @@
 import BackgroundEffects from "./BackgroundEffects";
 import HeroContent from "./HeroContent";
-import MortgageCalculator from "./MortgageCalculator";
+import { lazy, Suspense } from "react";
+const MortgageCalculator = lazy(() => import("./MortgageCalculator"));
 
 function Hero({ openChat }) {
   return (
@@ -14,7 +15,13 @@ function Hero({ openChat }) {
 
           <HeroContent openChat={openChat} />
 
+        <Suspense
+  fallback={
+    <div className="h-[500px] rounded-3xl bg-white/5 animate-pulse" />
+  }
+>
           <MortgageCalculator />
+          </Suspense>
 
         </div>
       </div>
