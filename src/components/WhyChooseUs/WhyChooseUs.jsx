@@ -9,33 +9,33 @@ import {
 const features = [
   {
     icon: Building2,
-    title: "Wide Bank Network",
+    title:"Access Leading UAE Banks",
     description:
-      "Access mortgage solutions from the UAE's leading banks and financial institutions.",
+    "Compare mortgage rates from leading UAE banks and financial institutions to find the best home loan for your needs.",
   },
   {
     icon: BriefcaseBusiness,
-    title: "Expert Guidance",
+    title: "Expert Mortgage Advisors",
     description:
-      "Our experienced mortgage advisors guide you from consultation to approval.",
+    "Our experienced mortgage advisors guide you through every step, from consultation to final mortgage approval.",
   },
   {
     icon: Zap,
-    title: "Fast Approvals",
+    title: "Fast Mortgage Approvals",
     description:
-      "Quick documentation and streamlined processing for faster approvals.",
+       "Enjoy a faster mortgage approval process with expert document review and streamlined application handling.",
   },
   {
     icon: Target,
-    title: "Tailored Solutions",
+    title: "Personalized Home Loan Solutions",
     description:
-      "Mortgage plans customized according to your financial goals and eligibility.",
+      "Receive customized home loan and mortgage solutions designed around your financial goals and eligibility.",
   },
   {
     icon: ShieldCheck,
-    title: "Transparent Process",
+    title: "Transparent Mortgage Process",
     description:
-      "No hidden charges. Clear communication and complete transparency throughout.",
+       "No hidden fees. We provide clear communication and complete transparency from consultation to loan approval.",
   },
 ];
 
@@ -57,15 +57,13 @@ function WhyChooseUs() {
 
           <h2 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold text-[#071A35] leading-tight">
 
-            Why HomeLoanz is Trusted Across UAE
+            Why HomeLoanz is the Trusted Mortgage Broker in Dubai & UAE
 
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-base md:text-lg leading-7 md:leading-8 text-gray-600">
 
-            We simplify the mortgage journey by combining expert advice,
-            trusted banking partnerships, and personalized financing
-            solutions designed around your needs.
+            HomeLoanz LLC is a trusted mortgage broker in Dubai helping UAE residents, expatriates, and property investors secure the right home loan. We compare mortgage options from leading UAE banks and provide expert guidance from consultation to approval.
 
           </p>
 

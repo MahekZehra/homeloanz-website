@@ -12,7 +12,7 @@ function HeroContent({ openChat }) {
 
         <span className="text-sm font-medium tracking-wide">
 
-          TRUSTED MORTGAGE BROKER IN UAE
+          TRUSTED MORTGAGE BROKER IN DUBAI & UAE
 
         </span>
 
@@ -22,12 +22,12 @@ function HeroContent({ openChat }) {
 
       <h1 className="mt-6 md:mt-8 text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
 
-        Home Financing
+        Trusted Mortgage Broker in Dubai, UAE
 <br />
 
      <span className="text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
 
-        Made Simple
+       Home Financing Made Simple
          </span>
 
       </h1>
@@ -36,8 +36,7 @@ function HeroContent({ openChat }) {
 
       <p className="mt-6 text-gray-300 text-base md:text-lg leading-7 md:leading-9 max-w-xl">
 
-        We help UAE residents and investors secure the best mortgage
-        solutions from top banks with fast approvals and expert guidance.
+       HomeLoanz LLC helps UAE residents, expatriates, and property investors compare mortgage rates from leading banks in Dubai and across the UAE. Get expert guidance, faster approvals, and personalized home loan solutions.
 
       </p>
 
@@ -57,7 +56,7 @@ function HeroContent({ openChat }) {
 >
   <Calculator size={20} 
   aria-hidden="true" />
-  Calculate Mortgage 
+  Calculate Your Mortgage
 </button>
 
         <button 
@@ -68,7 +67,7 @@ function HeroContent({ openChat }) {
 
           <Headphones size={20}  aria-hidden="true"/>
 
-          Speak to an Expert
+          Speak with a Mortgage Expert
 
         </button>
 
