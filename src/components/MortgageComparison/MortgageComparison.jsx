@@ -1,4 +1,4 @@
-import { useState, lazy, Suspense } from "react";
+import { useState, useMemo, lazy, Suspense } from "react";
 import SectionHeading from "../ui/SectionHeading";
 import PropertyInputs from "./PropertyInputs";
 import InterestInputs from "./InterestInputs";
@@ -28,38 +28,31 @@ const MortgageComparison = ({ openChat }) => {
   const [rateA, setRateA] = useState(3.99);
 
   const [rateB, setRateB] = useState(4.99);
-  const optionA = calculateMortgage(
-  propertyPrice,
-  downPayment,
-  rateA,
-  tenure
+
+ const optionA = useMemo(
+  () => calculateMortgage(propertyPrice, downPayment, rateA, tenure),
+  [propertyPrice, downPayment, rateA, tenure]
 );
 
-
-const optionB = calculateMortgage(
-  propertyPrice,
-  downPayment,
-  rateB,
-  tenure
+const optionB = useMemo(
+  () => calculateMortgage(propertyPrice, downPayment, rateB, tenure),
+  [propertyPrice, downPayment, rateB, tenure]
 );
 
+const bestOption = useMemo(
+  () => (rateA < rateB ? optionA : optionB),
+  [rateA, rateB, optionA, optionB]
+);
 
+const bestRate = useMemo(
+  () => (rateA < rateB ? rateA : rateB),
+  [rateA, rateB]
+);
 
-const bestOption =
-  rateA < rateB ? optionA : optionB;
-
-
-
-const bestRate =
-  rateA < rateB ? rateA : rateB;
-
-
-
-const saving =
-  Math.abs(
-    optionA.totalPayment -
-    optionB.totalPayment
-  );
+const saving = useMemo(
+  () => Math.abs(optionA.totalPayment - optionB.totalPayment),
+  [optionA, optionB]
+);
 
 
 

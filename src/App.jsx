@@ -9,7 +9,7 @@ const HowItWorks = lazy(() => import("./components/HowItWorks/HowItWorks"));
 const Consultation = lazy(() => import("./components/Consultation/Consultation"));
 const Testimonials = lazy(() => import("./components/Testimonials/Testimonials"));
 const FAQ = lazy(() => import("./components/FAQ/FAQ"));
-import Footer from "./components/Footer/Footer";
+const Footer = lazy(() => import("./components/Footer/Footer"));
 
 
 const ChatBot = lazy(() => import("./components/ChatBot/ChatBot"));
@@ -38,7 +38,11 @@ function App() {
          </main>
          </Suspense>
 
-      <Footer />
+      
+     <Suspense fallback={null}>
+  <Footer />
+</Suspense> 
+
     <Suspense fallback={null}>
       {isChatOpen && (
   <ChatBot
