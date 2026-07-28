@@ -1,88 +1,103 @@
-import { sendChatEmail } from "../utils/sendChatEmail";
-import SuccessScreen from "./SuccessScreen";
-import SummaryCard from "./SummaryCard";
-import QuickReplies from "./QuickReplies";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { X } from "lucide-react";
 
 import WelcomeScreen from "./WelcomeScreen";
 import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
+import QuickReplies from "./QuickReplies";
+import SummaryCard from "./SummaryCard";
+import SuccessScreen from "./SuccessScreen";
 
 import useChatbot from "../hooks/useChatbot";
 
-const ChatWindow = ({ closeChat }) => {
+import { sendChatEmail } from "../utils/sendChatEmail";
 
-  const [started, setStarted] = useState(false);
-  const [messages, setMessages] = useState([]);
-  const [showSummary, setShowSummary] = useState(false);
-  const [showSuccess, setShowSuccess] = useState(false);
+const COMPANY_PHONE = "971523030180";
 
+export default function ChatWindow({ closeChat }) {
   const {
-    currentQuestion,
-    submitAnswer,
-    finished,
     startChat,
-     answers,
+
+    currentQuestion,
+
+    submitAnswer,
+
+    answers,
+
+    messages,
+
+    finished,
+
+    showSummary,
+
+    showSuccess,
+
+    setShowSummary,
+
+    setShowSuccess,
+
+    recommendation,
   } = useChatbot();
 
-  const handleSend = (answer) => {
-  // user message
-  setMessages((prev) => [
-    ...prev,
-    {
-      sender: "user",
-      message: answer,
-    },
-  ]);
+  const [started, setStarted] = useState(false);
 
-  submitAnswer(answer);
-};
-  useEffect(() => {
+  //-------------------------------------
+  // WhatsApp
+  //-------------------------------------
 
-    if (finished) {
+  const openWhatsApp = () => {
 
-        setShowSummary(true);
+  const message = `🏠 *NEW MORTGAGE INQUIRY*
 
-    }
+━━━━━━━━━━━━━━━━━━
 
-}, [finished]);
+👤 *Customer Details*
 
+• Name:
+${answers.name}
 
-useEffect(() => {
-  if (currentQuestion) {
-    setMessages((prev) => [
-      ...prev,
-      {
-        sender: "bot",
-        message: currentQuestion.question,
-      },
-    ]);
-  }
-}, [currentQuestion]);
+• Phone:
+${answers.phone}
 
-const COMPANY_PHONE = "971501234567";
-const COMPANY_EMAIL = "info@homeloanzllc.com";
+• Email:
+${answers.email}
 
-const openWhatsApp = () => {
+━━━━━━━━━━━━━━━━━━
 
-  const message = `Hello HomeLoanz LLC FZ,
+🏡 *Mortgage Information*
 
-I'd like to inquire about a mortgage.
+Resident:
+${answers.resident}
 
-Name: ${answers.name}
+Mortgage Purpose:
+${answers.purpose}
 
-Phone: ${answers.phone}
+Employment Type:
+${answers.employment}
 
-Email: ${answers.email}
+Monthly Income:
+AED ${answers.income}
 
-Resident: ${answers.resident}
+Property Value:
+AED ${answers.propertyValue}
 
-Mortgage Purpose: ${answers.purpose}
+Down Payment:
+${answers.downPayment}
 
-Monthly Income: ${answers.income}
+Existing Home Loan:
+${answers.existingLoan}
 
-Thank you.`;
+━━━━━━━━━━━━━━━━━━
+
+🤖 *AI Mortgage Assessment*
+
+${recommendation?.title || "Mortgage Inquiry"}
+
+${recommendation?.message || ""}
+
+━━━━━━━━━━━━━━━━━━
+
+Thank you for choosing *HomeLoanz LLC FZ*.`;
 
   window.open(
     `https://wa.me/${COMPANY_PHONE}?text=${encodeURIComponent(message)}`,
@@ -90,22 +105,30 @@ Thank you.`;
   );
 };
 
-const openEmail = async () => {
+  //-------------------------------------
+  // Email
+  //-------------------------------------
 
-  const success = await sendChatEmail(answers);
+  const openEmail = async () => {
+    const success = await sendChatEmail(
+  answers,
+  recommendation
+);
 
-  if (success) {
-    alert("✅ Thank you! Your inquiry has been sent successfully.");
-  } else {
-    alert("❌ Failed to send inquiry.");
-  }
+if (success) {
+  alert("✅ Your inquiry has been sent successfully!");
+} else {
+  alert("❌ Something went wrong. Please try again.");
+}
+  };
 
-};
+  //-------------------------------------
 
   return (
     <div className="flex h-full flex-col">
 
       {/* Header */}
+
       <div className="flex items-center justify-between bg-[#0B3C5D] px-5 py-4 text-white">
 
         <div>
@@ -113,10 +136,9 @@ const openEmail = async () => {
             🏠 HomeLoanz Assistant
           </h2>
 
-          <div className="mt-1 flex items-center gap-2 text-sm text-white/80">
-            <div className="h-2 w-2 rounded-full bg-green-400"></div>
+          <p className="text-sm text-white/70">
             Online
-          </div>
+          </p>
         </div>
 
         <button
@@ -131,72 +153,54 @@ const openEmail = async () => {
       {/* Body */}
 
       {!started ? (
-
-       <WelcomeScreen
-  onStart={() => {
-    setStarted(true);
-    startChat();
-  }}
-/>
-
+        <WelcomeScreen
+          onStart={() => {
+            setStarted(true);
+            startChat();
+          }}
+        />
       ) : (
-
         <>
           <div className="flex-1 overflow-y-auto bg-white p-5">
 
-  {showSuccess ? (
+            {showSuccess ? (
+              <SuccessScreen
+                onWhatsapp={openWhatsApp}
+                onEmail={openEmail}
+              />
+            ) : showSummary ? (
+              <SummaryCard
+                answers={answers}
+                recommendation={recommendation}
+                onEdit={() => setShowSummary(false)}
+                onWhatsapp={() => setShowSuccess(true)}
+                onEmail={() => setShowSuccess(true)}
+              />
+            ) : (
+              messages.map((msg, index) => (
+                <ChatMessage
+                  key={index}
+                  sender={msg.sender}
+                  message={msg.message}
+                />
+              ))
+            )}
 
-    <SuccessScreen
-      onWhatsapp={openWhatsApp}
-      onEmail={openEmail}
-    />
-
-  ) : showSummary ? (
-
-    <SummaryCard
-      answers={answers}
-      onEdit={() => {
-        setShowSummary(false);
-      }}
-      onWhatsapp={() => {
-        setShowSuccess(true);
-      }}
-      onEmail={() => {
-        setShowSuccess(true);
-      }}
-    />
-
-  ) : (
-
-    messages.map((msg, index) => (
-      <ChatMessage
-        key={index}
-        sender={msg.sender}
-        message={msg.message}
-      />
-    ))
-
-  )}
-
-</div>
+          </div>
 
           {!finished &&
-  (currentQuestion?.type === "text" ? (
-    <ChatInput onSend={handleSend} />
-  ) : (
-    <QuickReplies
-      options={currentQuestion.options}
-      onSelect={handleSend}
-    />
-  ))
-}
-
+            (currentQuestion?.type === "text" ? (
+              <ChatInput
+                onSend={submitAnswer}
+              />
+            ) : (
+              <QuickReplies
+                options={currentQuestion.options}
+                onSelect={submitAnswer}
+              />
+            ))}
         </>
-
       )}
-
     </div>
   );
-};
-
-export default ChatWindow;
+}
