@@ -270,7 +270,7 @@ function Footer() {
 
           <p className="text-gray-300 text-xs md:text-sm">
 
-            Designed & Developed with ❤️ using React & Tailwind CSS
+            Designed & Developed by MZ Creatives using React & Tailwind CSS
 
           </p>
 
