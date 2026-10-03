@@ -8,27 +8,27 @@ import {
 const services = [
   {
     icon: Home,
-    title: "Home Purchase",
+    title: "Home Loans in Dubai & UAE",
     description:
-      "Secure the best home loan for buying your dream property anywhere in Dubai and across the UAE.",
+      "Explore home loan options for purchasing residential property in Dubai and across the UAE, with guidance throughout the mortgage process.",
   },
   {
     icon: RefreshCcw,
-    title: "Mortgage Refinance",
+    title: "Mortgage Refinancing in the UAE",
     description:
-      "Reduce your monthly repayments or get better interest rates by refinancing your existing mortgage.",
+      "Review your existing mortgage and explore refinancing options that may help you manage your repayments or access more suitable financing terms.",
   },
   {
     icon: Building2,
-    title: "Investment Property",
+    title: "Investment Property Mortgages",
     description:
-      "Mortgage solutions for property investors looking to expand their real estate portfolio.",
+      "Mortgage solutions for property investors looking to finance residential investment properties and grow their real estate portfolio.",
   },
   {
     icon: Landmark,
-    title: "Commercial Mortgage",
+    title: "Commercial Property Mortgages",
     description:
-      "Flexible financing options for offices, retail spaces, warehouses, and commercial properties.",
+      "Explore financing options for eligible commercial properties, including offices, retail spaces, warehouses, and other business premises.",
   },
 ];
 
@@ -40,6 +40,7 @@ function MortgageSolutions() {
     >
       <div className="max-w-7xl mx-auto px-5 sm:px-6">
 
+        {/* Section Header */}
         <div className="text-center">
 
           <span className="rounded-full bg-blue-100 px-4 py-2 text-sm font-semibold text-blue-700">
@@ -51,32 +52,31 @@ function MortgageSolutions() {
           </h2>
 
           <p className="mt-6 max-w-3xl mx-auto text-gray-600 leading-8">
-            HomeLoanz LLC provides expert mortgage solutions across Dubai
-            and the UAE for home buyers, investors, and businesses.
+            HomeLoanz LLC provides mortgage guidance across Dubai and the UAE
+            for home buyers, property investors, and businesses exploring
+            suitable financing options.
           </p>
 
         </div>
 
+        {/* Services */}
         <div className="mt-16 grid gap-8 md:grid-cols-2">
 
           {services.map((service, index) => {
-
             const Icon = service.icon;
 
             return (
-
               <div
                 key={index}
                 className="rounded-3xl border border-gray-100 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-2xl"
               >
 
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100">
-
                   <Icon
                     className="text-blue-600"
                     size={30}
+                    aria-hidden="true"
                   />
-
                 </div>
 
                 <h3 className="mt-6 text-2xl font-bold text-[#071A35]">
@@ -88,9 +88,7 @@ function MortgageSolutions() {
                 </p>
 
               </div>
-
             );
-
           })}
 
         </div>

@@ -2,131 +2,105 @@ import { ShieldCheck, Headphones, Calculator, Clock3 } from "lucide-react";
 
 function HeroContent({ openChat }) {
   return (
-  <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-12 pt-12 md:pt-20 pb-16 md:pb-24">
+    <div className="relative z-10 max-w-[1400px] mx-auto px-5 sm:px-6 lg:px-12 pt-12 md:pt-20 pb-16 md:pb-24">
 
       {/* Badge */}
-
       <div className="inline-flex items-center gap-2 rounded-full border border-blue-500/20 bg-blue-500/10 px-5 py-2 text-blue-300">
-
-        <ShieldCheck size={16} />
+        <ShieldCheck size={16} aria-hidden="true" />
 
         <span className="text-sm font-medium tracking-wide">
-
           TRUSTED MORTGAGE BROKER IN DUBAI & UAE
-
         </span>
-
       </div>
 
-      {/* Heading */}
-
+      {/* Main Heading */}
       <h1 className="mt-6 md:mt-8 text-4xl sm:text-5xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
-
         Trusted Mortgage Broker in Dubai, UAE
-<br />
+        <br />
 
-     <span className="text-3xl sm:text-4xl lg:text-5xl sm:text-6xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
-
-       Home Financing Made Simple
-         </span>
-
+        <span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
+          Home Financing Made Simple
+        </span>
       </h1>
 
       {/* Description */}
-
       <p className="mt-6 text-gray-300 text-base md:text-lg leading-7 md:leading-9 max-w-xl">
-
-       HomeLoanz LLC helps UAE residents, expatriates, and property investors compare mortgage rates from leading banks in Dubai and across the UAE. Get expert guidance, faster approvals, and personalized home loan solutions.
-
+        HomeLoanz LLC helps UAE residents, expatriates, and property investors
+        compare mortgage options from banks in Dubai and across the UAE. Get
+        expert mortgage guidance, understand your financing options, and find a
+        home loan solution that fits your needs.
       </p>
 
-      {/* Buttons */}
-
+      {/* CTA Buttons */}
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
 
         <button
-        type="button"
-        aria-label="Go to Mortgage Calculator"
-  onClick={() =>
-    document.getElementById("calculator")?.scrollIntoView({
-      behavior: "smooth",
-    })
-  }
-  className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-[1.02]"
->
-  <Calculator size={20} 
-  aria-hidden="true" />
-  Calculate Your Mortgage
-</button>
+          type="button"
+          aria-label="Go to Mortgage Calculator"
+          onClick={() =>
+            document.getElementById("calculator")?.scrollIntoView({
+              behavior: "smooth",
+            })
+          }
+          className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 px-8 py-4 font-semibold text-white shadow-lg transition hover:scale-[1.02]"
+        >
+          <Calculator size={20} aria-hidden="true" />
+          Calculate Your Mortgage
+        </button>
 
-        <button 
-        type="button"
-        aria-label= "Speak to a mortgage expert"
-        onClick={openChat}
-        className="flex items-center gap-3 rounded-xl border border-gray-500 px-8 py-4 font-semibold text-white transition hover:border-blue-500 hover:bg-white/5">
-
-          <Headphones size={20}  aria-hidden="true"/>
-
+        <button
+          type="button"
+          aria-label="Speak to a mortgage expert"
+          onClick={openChat}
+          className="flex items-center gap-3 rounded-xl border border-gray-500 px-8 py-4 font-semibold text-white transition hover:border-blue-500 hover:bg-white/5"
+        >
+          <Headphones size={20} aria-hidden="true" />
           Speak with a Mortgage Expert
-
         </button>
 
       </div>
 
-      {/* Bottom Trust */}
-
+      {/* Trust Indicators */}
       <div className="mt-10 flex flex-wrap gap-8">
 
         <div className="flex items-center gap-3">
-
           <div className="rounded-full bg-blue-500/10 p-3">
-
-            <ShieldCheck className="text-blue-400" size={20}  aria-hidden="true"/>
-
+            <ShieldCheck
+              className="text-blue-400"
+              size={20}
+              aria-hidden="true"
+            />
           </div>
 
           <div>
-
             <p className="text-white font-semibold">
-
-              100%
-
+              Secure
             </p>
 
             <p className="text-sm text-gray-300">
-
-              Secure Process
-
+              Mortgage Process
             </p>
-
           </div>
-
         </div>
 
         <div className="flex items-center gap-3">
-
           <div className="rounded-full bg-blue-500/10 p-3">
-
-            <Clock3 className="text-blue-400" size={20}  aria-hidden="true"/>
-
+            <Clock3
+              className="text-blue-400"
+              size={20}
+              aria-hidden="true"
+            />
           </div>
 
           <div>
-
             <p className="text-white font-semibold">
-
               24h
-
             </p>
 
             <p className="text-sm text-gray-300">
-
               Quick Response
-
             </p>
-
           </div>
-
         </div>
 
       </div>
