@@ -125,11 +125,11 @@ if (success) {
   //-------------------------------------
 
   return (
-    <div className="flex h-full flex-col">
+    <div className="flex h-full min-h-0 w-full flex-col overflow-hidden">
 
       {/* Header */}
 
-      <div className="flex items-center justify-between bg-[#0B3C5D] px-5 py-4 text-white">
+      <div className="flex shrink-0 items-center justify-between bg-[#0B3C5D] px-5 py-4 text-white">
 
         <div>
           <h2 className="text-xl font-bold">
@@ -141,13 +141,16 @@ if (success) {
           </p>
         </div>
 
-        <button
-          onClick={closeChat}
-          className="rounded-lg p-2 hover:bg-white/10"
-        >
-          <X size={22} />
-        </button>
-
+       
+       <button
+  type="button"
+  onClick={closeChat}
+  aria-label="Close chatbot"
+  title="Close chatbot"
+  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white transition hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white"
+>
+  <X size={24} strokeWidth={2.5} />
+</button>
       </div>
 
       {/* Body */}
@@ -161,8 +164,7 @@ if (success) {
         />
       ) : (
         <>
-          <div className="flex-1 overflow-y-auto bg-white p-5">
-
+          <div className="min-h-0 flex-1 overflow-y-auto overscroll-contain bg-white p-5">
             {showSuccess ? (
               <SuccessScreen
                 onWhatsapp={openWhatsApp}
@@ -188,17 +190,17 @@ if (success) {
 
           </div>
 
-          {!finished &&
-            (currentQuestion?.type === "text" ? (
-              <ChatInput
-                onSend={submitAnswer}
-              />
-            ) : (
-              <QuickReplies
-                options={currentQuestion.options}
-                onSelect={submitAnswer}
-              />
-            ))}
+         <div className="shrink-0 bg-white">
+  {!finished &&
+    (currentQuestion?.type === "text" ? (
+      <ChatInput onSend={submitAnswer} />
+    ) : (
+      <QuickReplies
+        options={currentQuestion.options}
+        onSelect={submitAnswer}
+      />
+    ))}
+</div>
         </>
       )}
     </div>

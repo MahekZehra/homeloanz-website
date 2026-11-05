@@ -1,12 +1,28 @@
+
+/* =========================================
+   HOMELOANZ CHATBOT - RESPONSIVE CONTAINER
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
 .chatbot-container {
   position: fixed;
+
   right: 24px;
   bottom: 24px;
 
-  width: 380px;
-  height: 600px;
+  width: min(380px, calc(100vw - 48px));
 
-  background: white;
+  height: min(600px, calc(100dvh - 48px));
+  max-height: calc(100dvh - 48px);
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
   border-radius: 24px;
 
   overflow: hidden;
@@ -15,13 +31,29 @@
 
   z-index: 99999;
 
+  isolation: isolate;
+
   animation: slideUp 0.35s ease;
+
+  min-height: 0;
 }
+
+/* Chatbot children must fit the container */
+
+.chatbot-container > * {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
 
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(40px) scale(0.96);
+    transform: translateY(25px) scale(0.97);
   }
 
   to {
@@ -29,8 +61,9 @@
     transform: translateY(0) scale(1);
   }
 }
+
 .animate-fadeIn {
-  animation: fadeIn .4s ease;
+  animation: fadeIn 0.4s ease;
 }
 
 @keyframes fadeIn {
@@ -42,5 +75,64 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* =========================================
+   SMALL LAPTOPS / SHORT SCREENS
+========================================= */
+
+@media (max-height: 650px) {
+  .chatbot-container {
+    bottom: 16px;
+    right: 16px;
+
+    height: calc(100dvh - 32px);
+    max-height: calc(100dvh - 32px);
+
+    border-radius: 20px;
+  }
+}
+
+/* =========================================
+   TABLETS AND MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .chatbot-container {
+    right: 12px;
+    bottom: 12px;
+
+    width: calc(100vw - 24px);
+
+    height: calc(100dvh - 24px);
+    max-height: calc(100dvh - 24px);
+
+    border-radius: 20px;
+  }
+}
+
+/* Very small screens */
+
+@media (max-width: 360px) {
+  .chatbot-container {
+    right: 8px;
+    bottom: 8px;
+
+    width: calc(100vw - 16px);
+
+    height: calc(100dvh - 16px);
+    max-height: calc(100dvh - 16px);
+
+    border-radius: 16px;
+  }
+}
+
+/* Reduced motion accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .chatbot-container,
+  .animate-fadeIn {
+    animation: none;
   }
 }

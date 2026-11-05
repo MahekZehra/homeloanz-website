@@ -9,13 +9,13 @@ function HeroContent({ openChat }) {
         <ShieldCheck size={16} aria-hidden="true" />
 
         <span className="text-sm font-medium tracking-wide">
-          TRUSTED MORTGAGE BROKER IN DUBAI & UAE
+          TRUSTED MORTGAGE BROKER IN UAE
         </span>
       </div>
 
       {/* Main Heading */}
       <h1 className="mt-6 md:mt-8 text-4xl sm:text-5xl lg:text-[72px] leading-tight lg:leading-[1.05] font-extrabold text-white">
-        Trusted Mortgage Broker in Dubai, UAE
+        Trusted Mortgage Broker in UAE
         <br />
 
         <span className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight lg:leading-[1.05] font-extrabold bg-gradient-to-r from-[#67A8FF] to-[#2563EB] bg-clip-text text-transparent">
@@ -26,7 +26,7 @@ function HeroContent({ openChat }) {
       {/* Description */}
       <p className="mt-6 text-gray-300 text-base md:text-lg leading-7 md:leading-9 max-w-xl">
         HomeLoanz LLC helps UAE residents, expatriates, and property investors
-        compare mortgage options from banks in Dubai and across the UAE. Get
+        compare mortgage options from banks across the UAE. Get
         expert mortgage guidance, understand your financing options, and find a
         home loan solution that fits your needs.
       </p>

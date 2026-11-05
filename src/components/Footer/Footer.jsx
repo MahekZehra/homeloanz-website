@@ -284,7 +284,7 @@ function Footer() {
           </p>
 
           <p className="text-center text-xs text-gray-300 md:text-right md:text-sm">
-            Designed & Developed by MZ Creatives using React & Tailwind CSS
+            Designed & Developed by MZ Creative Studio
           </p>
 
         </div>
