@@ -73,7 +73,7 @@ function Footer() {
                   href="tel:+971501234567"
                   className="transition hover:text-blue-400"
                 >
-                  +971 50 123 4567
+                +971 52 303 0180
                 </a>
               </div>
 
@@ -152,7 +152,7 @@ function Footer() {
               </a>
 
               <a
-                href="https://wa.me/971501234567"
+                href="https://wa.me/971523030180"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat with HomeLoanz on WhatsApp"
@@ -293,7 +293,7 @@ function Footer() {
 
       {/* Floating WhatsApp Button */}
       <a
-        href="https://wa.me/971501234567"
+        href="https://wa.me/971523030180"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with HomeLoanz on WhatsApp"
