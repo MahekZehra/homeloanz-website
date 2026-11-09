@@ -9,6 +9,7 @@ import {
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { trackGA4Event } from "../../utils/analytics";
 
 function Consultation({ openChat }) {
     const [status, setStatus] = useState("");
@@ -28,6 +29,7 @@ const handleSubmit = async (e) => {
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     );
 
+    trackGA4Event("generate_lead", { form_name: "mortgage_consultation" });
     setStatus("✅ Thank you! Your inquiry has been sent successfully.");
     e.target.reset();
   } catch (error) {

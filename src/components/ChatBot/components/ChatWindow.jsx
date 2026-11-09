@@ -11,6 +11,7 @@ import SuccessScreen from "./SuccessScreen";
 import useChatbot from "../hooks/useChatbot";
 
 import { sendChatEmail } from "../utils/sendChatEmail";
+import { trackGA4Event } from "../../../utils/analytics";
 
 const COMPANY_PHONE = "971523030180";
 
@@ -46,6 +47,7 @@ export default function ChatWindow({ closeChat }) {
   //-------------------------------------
 
   const openWhatsApp = () => {
+  trackGA4Event("whatsapp_click", { button_location: "chatbot" });
 
   const message = `🏠 *NEW MORTGAGE INQUIRY*
 
@@ -116,6 +118,7 @@ Thank you for choosing *HomeLoanz LLC FZ*.`;
 );
 
 if (success) {
+  trackGA4Event("chatbot_lead", { lead_method: "email" });
   alert("✅ Your inquiry has been sent successfully!");
 } else {
   alert("❌ Something went wrong. Please try again.");
