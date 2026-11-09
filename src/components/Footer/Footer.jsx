@@ -11,6 +11,7 @@ import {
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
+import { trackGA4Event } from "../../utils/analytics";
 
 const quickLinks = [
   { label: "Home", href: "#home" },
@@ -153,6 +154,7 @@ function Footer() {
 
               <a
                 href="https://wa.me/971523030180"
+                onClick={() => trackGA4Event("whatsapp_click", { button_location: "footer_social" })}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat with HomeLoanz on WhatsApp"
@@ -294,6 +296,7 @@ function Footer() {
       {/* Floating WhatsApp Button */}
       <a
         href="https://wa.me/971523030180"
+        onClick={() => trackGA4Event("whatsapp_click", { button_location: "floating_button" })}
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with HomeLoanz on WhatsApp"
